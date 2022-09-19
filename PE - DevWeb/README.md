@@ -1,0 +1,1 @@
+Nessa pasta constam todas as tarefas práticas do Projeto de Extensão de Desenvolvimento de Software, iniciado em Setembro de 2022.
