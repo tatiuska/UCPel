@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* tags */
+body {
+    background-color: rgb(255,255,255);
+}
+h1 {
+    font-family: Verdana;
+    font-size: 30pt;
+    color: rgb(12.3,82.1,230.5);
+}
+h2 {
+    font-family: Verdana;
+    font-size: 15pt;
+    color: rgb(44,85.4,173.3);
+}
+h3 {
+    font-family: Verdana;
+    font-size: 12pt;
+    color: rgb(48.4,62.1,91.1);
+}
+p {
+    font-family: Verdana;
+    font-size: 10pt;
+    color: rgb(0,0,0);
+}
+ol, ul, li {
+    font-family: Verdana;
+    font-size: 10pt;
+    color: rgb(0,0,0);
+}
+a {
+    color: rgb(12.3,82.1,230.5);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(44,85.4,173.3);
+    font-weight: bold;
+}
+
+/* Formatação de imagens com legendas */
+figure.foto-cv {
+    position: relative;
+    border: 8px solid rgb(255,255,255);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 3px rgb(0,0,0);
+}
+figure.foto-cv img {
+    width: 100%;
+    height: 100%;
+}
+figure.foto-cv figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.3);
+    color: rgb(255,255,255);
+    text-align: right;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-cv:hover figcaption {
+    opacity: 1;
+}
