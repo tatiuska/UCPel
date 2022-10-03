@@ -8,7 +8,7 @@ Ferramentas utilizadas: VS Code, GitBash, GitHub.
 ## Terceira semana: manipulação de imagens, listas e links
 - acrescentar foto.
 - link para instituição de formação e informações do curso de formação.
-- lista para informar principais cursos realizados, e as principais experiências profissionais.
+- lista para informar principais cursos realizados, e as principais experiências profissionais.</br>
 Ferramentas utilizadas: VS Code, GitBash, GitHUb.
 
 ## Quarta semana: menus, efeitos visuais, interfaces e cabeçalhos no CSS
@@ -16,5 +16,5 @@ Ferramentas utilizadas: VS Code, GitBash, GitHUb.
 - criar menu Formação Acadêmica, Cursos Realizados e Experiências Profissionais.
 - inserir efeitos visuais no menu.
 - criar interface na página inicial.
-- fazer um cabeçalho com o título Curriculum Vitae, nome e foto.
+- fazer um cabeçalho com o título Curriculum Vitae, nome e foto.</br>
 Ferramentas utilizadas: VS Code, GitBash, GitHub.
