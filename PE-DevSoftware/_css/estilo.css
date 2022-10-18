@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap'); /* Importação de Fonte Externa */
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap'); /* Importação de Fonte Externa do Google Fonts */
 
 /* Formatação das Tags principais */
 body {
@@ -50,27 +50,30 @@ p {
     margin-bottom: 20px;
     margin-left: 25px;
 }
-ol, ul, li {
+p#script-cv {                   /* formatação específica do parágrafo do footer do index.html, onde está o script Date(), para que ficasse em fonte menor */
+    font-size: 10px;
+}
+ol, ul, li {                    /* configurações para as listas em todas as páginas*/
     font-family: 'Sen', sans-serif;
     font-size: 10pt;
     font-weight: normal;
     color: rgb(0,0,0);
 }
-a {
+a {                             /* configuração dos links em todas as páginas */
     color: rgb(75,95,155);
     text-decoration: none;
 }
-a:hover {
+a:hover {                       /* configuração para os links ao passar o mouse por cima em todas as páginas. escolhi usar bold ao invés de sublinhado */
     color: rgb(255,153,0);
     font-weight: bold;
     transition: 1s;
 }
-tr, td {
+tr, td {                        /* estilos para a tabela de idiomas */
     font-family: 'Sen', sans-serif;
     font-size: 10pt;
 }
 
-/* Formatação de imagens com legendas */
+/* Formatação de imagem com legenda, para a foto do CV no index.html */
 figure.foto-cv {
     position: relative;
     border: 8px solid rgb(255,255,255);
@@ -83,24 +86,35 @@ figure.foto-cv img {
     width: 100%;
     height: 100%;
 }
-figure.foto-cv figcaption {
+figure.foto-cv figcaption {         /* as configurações do figcaption precisaram ser modificadas para que o script mudaFoto() funcionasse */
     opacity: 0;
     position: absolute;
     top: 0px;
-    background-color: rgba(0,0,0,.3);
-    color: rgb(255,255,255);
+    color: rgb(146,146,150);
     text-align: right;
     width: 200px;
-    height: 200px;
-    padding: 10px;
+    height: 20px;
+    padding-top: 0px;
+    margin: 175px 0px 0px 0px;       /* mexi nas margens para conseguir posicionar o nome que aparece ao passar com o mouse por cima da foto para o canto inferior direito da foto */
     box-sizing: border-box;
     transition: opacity 1s;
+}
+figure.foto-cv figcaption p {
+    margin: 5px;
+    padding: 0px;
+    text-align: right;
 }
 figure.foto-cv:hover figcaption {
     opacity: 1;
 }
+figure.foto-cv:hover figcaption p {
+    text-align: right;
+    margin: 5px;
+    padding: 0px;
+    color: rgb(255,255,255);
+}
 
-/* Formatação do Cabeçalho */
+/* Formatação do Cabeçalho do index.html */
 header#cabecalho {
     border-bottom: 1px solid rgb(60,60,60);
     height: 150px;
@@ -125,7 +139,7 @@ header#cabecalho h3 {
     margin-top: -120px;
 }
 
-/* Formatação da Interface */
+/* Formatação da Interface, comum a todas as páginas do CV */
 div#interface {
     width: 800px;
     background-color: rgb(255,255,255);
@@ -140,12 +154,13 @@ div#interface h1 {
     border-bottom: 1px solid rgb(60,60,60);
 }
 
-/* Formatação do Menu */
+/* Formatação do Menu de navegação localizado no index.html */
 nav#menu {
     display: block;
-    padding-left: 70px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    padding: 10px 45px 10px 00px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 nav#menu h1 {
     display: none;
@@ -174,59 +189,74 @@ nav#menu a:hover {
 }
 
 /* Formatação de section, aside e footer */
-section#principal {
+section#principal {         /* comum a todas as páginas secundárias */
     width: 500px;
     padding: 0px;
     margin-top: -80px;
     margin-bottom: 0px;
 }
-section#principal-index {
+section#principal-index {   /* configuração de section para o index.html */
     width: 320px;
-    padding: 0px;
+    padding: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
     display: block;
     float: left;
 }
-aside#lateral {
+aside#lateral {             /* configuração de aside para o index.html. não foram acrescentadas tags do tipo aside nas outras páginas */
     width: 250px;
-    padding: 0px;
+    height: 250px;
+    padding: 10px;
     display: block;
     float: right;
-    margin-top: 0px;
-    margin-left: -180px;
+    margin-left: -100px;
 }
-footer#rodape {
+footer#rodape {             /* comum a todas as páginas do CV */
     clear: both;
+    padding-top: 10px;
+    height: 100px;
+    width: auto;
+}
+footer#rodape p {           /* configuração exclusiva para o parágrafo do rodapé do footer do index.html, onde fica a função Date() */
+    height: 20px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
 }
 
-/* Formatação cabeçalho das páginas de formação, cursos e experiência */
-header#cabecalho-pags {
+header#cabecalho-pags {     /* Formatação do cabeçalho das páginas de formação acadêmica, cursos e experiência profissional */
     height: 150px;
     width: auto;
     margin-left: 5px;
 }
-table#tabela-idiomas {
-    border: 1px solid rgb(75,95,155);
-    border-spacing: 0px;
-    margin-left: auto;
-    margin-right: auto;
-}
-table#tabela-idiomas td {
+table#tabela-idiomas {      /* formatação da tabela de idiomas, localizada dentro do aside no index.html */
     border: 1px solid rgb(62,95,193);
-    padding: 10px;
+    border-spacing: 0px;
+    margin: 10px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+}
+table#tabela-idiomas td {   /* formatação da tabela de idiomas, localizada dentro do aside no index.html */
+    border: 1px solid rgb(62,95,193);
+    padding: 10px 15px 10px 15px;
+    margin: 5px 0px 10px 0px;
     text-align: left;
     vertical-align: middle;
 }
-table#tabela-idiomas td.ce {
+table#tabela-idiomas td.ce {    /* formatação da tabela de idiomas, localizada dentro do aside no index.html */
     color: rgb(255,255,255);
     background-color: rgb(62,95,193);
     vertical-align: middle;
     font-weight: bold;
 }
-table#tabela-idiomas td.cd {
+table#tabela-idiomas td.cd {    /* formatação da tabela de idiomas, localizada dentro do aside no index.html */
     background-color: rgb(221,221,221);
 }
-table#tabela-idiomas caption {
+table#tabela-idiomas caption {  /* formatação da tabela de idiomas, localizada dentro do aside no index.html */
     text-align: left;
+    padding: 0px;
+}
+table#tabela-idiomas caption h4 {   /* formatação da tabela de idiomas, localizada dentro do aside no index.html */
+    margin: 5px 0px 10px 0px;
+    padding: 0px;
 }

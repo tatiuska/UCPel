@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Tatiana Weska</title>
-    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/> <!-- link de chamada do CSS -->
 </head>
 <body>
-    <div id="interface">
-        <header id="cabecalho">
-            <hgroup>
+    <div id="interface"> <!-- div principal comum a todas as páginas do CV -->
+
+        <header id="cabecalho"> <!-- cabeçalho personalizado do index.html -->
+            <hgroup> <!-- título da página, nome e curso -->
                 <h1>Curriculum Vitae</h1>
-                <h2>Tatiana Weska</h2>
+                <h2 id="nome" onclick="status(nome)">Tatiana Weska</h2>
                 <h3>Análise e Desenvolvimento de Sistemas</h3>
             </hgroup>
 
-            <figure class="foto-cv">
-                <img src="_imagens/foto_cv.jpg"/>
+            <figure class="foto-cv"> <!-- foto para o CV com figcaption -->
+                <img id="img-cv" src="_imagens/foto_cv.jpg" onmousemove="mudaFoto(1)" onmouseout="mudaFoto(2)" onclick="mudaFoto(3)"/> <!-- chamada da função mudaFoto() -->
                 <figcaption>
                     <p>Tatiana Weska</p>
                 </figcaption>
             </figure>
         </header>
-        <section id="principal-index">
+
+        <section id="principal-index"> <!-- section personalizada do index.html com divs separadas para dados pessoais e endereço -->
             <div id="dados-pessoais">
                 <h4>Dados Pessoais</h4>
                 <p>
@@ -43,7 +45,8 @@
                 </p>
             </div>
         </section>
-        <aside id="lateral">
+
+        <aside id="lateral"> <!-- aside onde fica a tabela com os idiomas do CV -->
             <table id="tabela-idiomas">
             <caption><h4>Idiomas</h4></caption>
             <tr><td class="ce">Espanhol</td> <td class="cd">Básico</td></tr>
@@ -51,16 +54,24 @@
             <tr><td class="ce">Português</td> <td class="cd">Nativo</td></tr>
             </table>
         </aside>
-        <footer id="rodape">
+
+        <footer id="rodape"> <!-- footer do index.html, onde fica o menu de navegação, com chamada da função mudaFoto() e o script Date(), que mostra data e hora de acesso ao CV -->
             <nav id="menu">
                 <h1>Menu</h1>
                 <ul type="disc">
-                    <li><a href="formacao-academica.html">Formação Acadêmica</a></li>
+                    <li onmouseover="mudaFoto(4)" onmouseout="mudaFoto(2)"><a href="formacao-academica.html">Formação Acadêmica</a></li> <!-- chamada da função mudaFoto() para mostrar ícone do diploma -->
                     <li><a href="cursos-realizados.html">Cursos Realizados</a></li>
                     <li><a href="exp-profissional.html">Experiência Profissional</a></li>
                 </ul>
             </nav>
+            <p id="script-cv"> <!-- parágrafo personalizado para o script Date(), para que ficasse centralizado e em uma fonte menor -->
+                <script>
+                        document.write("Currículo acessado em: " + Date());
+                </script>
+            </p>
         </footer>
+
     </div>
+    <script language="javascript" src="_js/script.js"></script> <!-- chamada do arquivo .js onde estão os códigos das funções mudaFoto() e status(nome) -->
 </body>
 </html>
