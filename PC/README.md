@@ -1,2 +1,2 @@
 <h1>Pensamento Computacional</h1>
-Exercícios de limguagem C, das trilhas ou das aulas (julho-setembro/2022).
+Exercícios de linguagem C, tanto das unidades de aprendizagem como das aulas (julho-setembro/2022).
