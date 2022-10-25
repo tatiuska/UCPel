@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiências Profissionais - CV - Tatiana Weska</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/> <!-- link de chamada do CSS -->
+    <style>
+        section#expProf {
+            width: 350px;
+            margin-top: -80px;
+            padding: 0px;
+            margin-right: 0px;
+        }
+        aside#vagas {
+            width: 600px;
+            margin: auto;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        iframe#frame-spec {
+            width: 550px;
+            height: 150px;
+            border: none;
+            overflow: hidden;
+        }
+        iframe#frame-spec::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div id="interface"> <!-- div principal comum a todas as páginas do CV -->
@@ -15,7 +38,7 @@
             </hgroup>
         </header>
         
-        <section id="principal"> <!-- onde ficam as informações de experiência profissional -->
+        <section id="expProf"> <!-- onde ficam as informações de experiência profissional -->
             <ol>
                 <li>Empresa A</li>
                 <ul type="disc">
@@ -42,6 +65,16 @@
                 </ul></br>
             </ol>
         </section>
+
+        <aside id="vagas"> <!--aqui ficou o iFrame com as oportunidades de emprego-->
+            <p>
+                <a href="oportunidades.html#uid" target="janela">UI Designer</a></br>
+                <a href="oportunidades.html#dev" target="janela">Desenvolvedor Front-end</a></br>
+                <a href="oportunidades.html#uxr" target="janela">UX Researcher</a></br>
+                <a href="oportunidades.html#botdev" target="janela">Desenvolvedor de Chatbots</a></br>
+            </p>
+            <iframe src="oportunidades.html" name="janela" id="frame-spec"></iframe>
+        </aside>
 
         <footer> <!-- área onde fica o link para voltar ao index.html, comum a todas as páginas secundárias do CV -->
             <p><a href="index.html">&lt;&lt; Voltar</a></p>

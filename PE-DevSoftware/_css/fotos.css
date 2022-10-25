@@ -1,0 +1,105 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap'); /* Importação de Fonte Externa do Google Fonts */
+
+
+section#principal-cursos {  /* configurações específicas por conta da inserção do álbum de fotos na página Cursos Realizados */
+    width: 350px;
+    padding: 0px;
+    margin-top: -80px;
+    margin-bottom: 0px;
+}
+aside#album {
+    width: 550 px;
+}
+ul#album-fotos {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#album-fotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid rgb(255,255,255);
+    background-color: rgb(255,255,255);
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .4s ease-in;
+}
+ul#album-fotos li span {
+    opacity: 0;
+    color: rgb(255,255,255);
+    text-shadow: 1px 1px 1px rgb(0,0,0);
+    background-color: rgba(0,0,0,.3);
+    font-size: 9px;
+    line-height: 370px;
+    padding: 5px;
+}
+ul#album-fotos li:hover {   /* efeito zoom no álbum de fotos */
+    -webkit-transform: scale(1.5);
+}
+ul#album-fotos li:hover span {  /* efeito que mostra a legenda das fotos */
+    opacity: 1;
+}
+ul#album-fotos li#foto-01 {
+    background: url('../_imagens/foto_01.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: rgb(255,255,255);
+}
+ul#album-fotos li#foto-01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-02 {
+    background: url('../_imagens/foto_02.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: rgb(255,255,255);
+}
+ul#album-fotos li#foto-02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-03 {
+    background: url('../_imagens/foto_03.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: rgb(255,255,255);
+}
+ul#album-fotos li#foto-03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-04 {
+    background: url('../_imagens/foto_04.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: rgb(255,255,255);
+}
+ul#album-fotos li#foto-04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-05 {
+    background: url('../_imagens/foto_05.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: rgb(255,255,255);
+}
+ul#album-fotos li#foto-05:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-06 {
+    background: url('../_imagens/foto_06.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: rgb(255,255,255);
+}
+ul#album-fotos li#foto-06:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
