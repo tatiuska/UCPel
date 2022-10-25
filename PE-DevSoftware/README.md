@@ -53,5 +53,5 @@ Entregue em: 17/10/2022.</br>
 - adicionar efeitos de CSS no álbum de fotos e incluir efeito de zoom.
 
 Ferramentas utilizadas: VS Code, GitBash, GitHub.</br>
-Stacks: HTML5, CSS3, Java Script.</br>
+Stacks: HTML5, CSS3, JavaScript.</br>
 Entregue em: 24/10/2022.</br>
