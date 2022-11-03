@@ -53,5 +53,16 @@ Entregue em: 17/10/2022.</br>
 - adicionar efeitos de CSS no álbum de fotos e incluir efeito de zoom.
 
 Ferramentas utilizadas: VS Code, GitBash, GitHub.</br>
-Stacks: HTML5, CSS3, JavaScript.</br>
+Stacks: HTML5, CSS3</br>
 Entregue em: 24/10/2022.</br>
+
+## Oitava semana: álbuns, vídeos e formulários
+- adicionar um um áudio na tela inicial do site.
+- adicionar um vídeo com o resumo das suas expertises.
+- criar um formulário, usando HTML e JavaScript, caso alguém queira entrar em contato com você.
+- extra: adição de ícones para cada uma das páginas secundárias do CV.
+- extra: criação de página com créditos das imagens e mídias utilizadas.
+
+Ferramentas utilizadas: VS Code, Miro Video Converter, GitBash, GitHub.</br>
+Stacks: HTML5, CSS3, JavaScript.</br>
+Entregue em: 02/11/2022.</br>

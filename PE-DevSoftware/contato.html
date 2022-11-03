@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- página criada para abrigar o formulário de contato -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de contato - CV - Tatiana Weska</title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/> <!-- link de chamada do CSS -->
+        <link rel="stylesheet" type="text/css" href="_css/form.css"/> <!-- link de chamada do CSS específico do formulário -->
+        <script>
+            document.getElementById("cEnviar").submit("tfweska@gmail.com");
+        </script>
+    </head>
+
+    <body>
+        <div id="interface"> <!-- div principal comum a todas as páginas do CV -->
+            <header id="cabecalho-pags"> <!-- cabeçalho comum às páginas secundárias do CV -->
+                <hgroup>
+                    <h1>Contato</h1>
+                </hgroup>
+
+                <figure class="foto-contato"> <!-- ícone de contato -->
+                    <img id="img-contato" src="_imagens/contato.png"/>
+                </figure>
+            </header>
+    
+            <section id="principal"> <!-- onde fica o formulário de contato -->        
+                <form method="post" id="fContato" action="mailto:meuemail[@]email.com">
+                    <fieldset id="mensagem">
+                        <legend>Formulário</legend>
+                            <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/> </p>
+                            <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
+                            <p><label for="cUrg">Grau de Urgência:</label> Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+                            <p><label for="cMsg">Mensagem:</label> 
+                                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                            </p>
+                    </fieldset>
+
+                   <input type="button" name="tEnviar" id="cEnviar" value="Enviar" placeholder="Enviar" onclick="send()"/><!-- botão de envio do formulário -->
+                </form>
+            </section>
+            
+            <footer> <!-- área onde fica o link para voltar ao index.html, comum a todas as páginas secundárias do CV -->
+                <p><a href="index.html">&lt;&lt; Voltar</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

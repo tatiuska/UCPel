@@ -49,6 +49,8 @@ p {
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 25px;
+    word-break: normal;
+    white-space: normal;
 }
 p#script-cv {                   /* formatação específica do parágrafo do footer do index.html, onde está o script Date(), para que ficasse em fonte menor */
     font-size: 10px;
@@ -141,7 +143,7 @@ header#cabecalho h3 {
 
 /* Formatação da Interface, comum a todas as páginas do CV */
 div#interface {
-    width: 800px;
+    width: 900px;
     background-color: rgb(255,255,255);
     margin: 10px auto 0px auto;
     border-radius: 25px;
@@ -203,7 +205,13 @@ section#principal-index {   /* configuração de section para o index.html */
     display: block;
     float: left;
 }
-aside#lateral {             /* configuração de aside para o index.html. não foram acrescentadas tags do tipo aside nas outras páginas */
+section#principal-creditos {    /* configuração da section para o creditos.html */
+    width: 300px;
+    padding: 0px;
+    margin-top: -80px;
+    margin-bottom: 0px;
+}
+aside#lateral {             /* configuração de aside para o index.html */
     width: 250px;
     height: 250px;
     padding: 10px;
@@ -211,13 +219,28 @@ aside#lateral {             /* configuração de aside para o index.html. não f
     float: right;
     margin-left: -100px;
 }
+aside#lateral-creditos {    /* configuração de aside para créditos.html */
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    display: block;
+    float: right;
+    margin-left: -50px;
+    margin-top: -200px;
+}
 footer#rodape {             /* comum a todas as páginas do CV */
     clear: both;
     padding-top: 10px;
     height: 100px;
     width: auto;
 }
-footer#rodape p {           /* configuração exclusiva para o parágrafo do rodapé do footer do index.html, onde fica a função Date() */
+footer#rodape-principal {             /* configuração de rodapé exclusiva do index.html, por causa da inserção do áudio */
+    clear: both;
+    padding-top: 10px;
+    height: 180px;
+    width: auto;
+}
+footer#rodape-principal p {           /* configuração exclusiva para o parágrafo do rodapé do footer do index.html, onde fica a função Date() */
     height: 20px;
     margin: 10px 0px 10px 0px;
     text-align: center;
@@ -259,4 +282,25 @@ table#tabela-idiomas caption {  /* formatação da tabela de idiomas, localizada
 table#tabela-idiomas caption h4 {   /* formatação da tabela de idiomas, localizada dentro do aside no index.html */
     margin: 5px 0px 10px 0px;
     padding: 0px;
+}
+
+/* Formatação ícones das páginas secundárias */
+figure.foto-diploma, figure.foto-cursos, figure.foto-exp-prof, figure.foto-contato, figure.foto-creditos {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    float: right;
+}
+figure.foto-diploma img, figure.foto-cursos img, figure.foto-exp-prof img, figure.foto-contato img, figure.foto-creditos img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Formatação da div onde o arquivo de áudio foi inserido, em index.html */
+div#radio {
+    width: 400px;
+    background-color: rgb(255,255,255);
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    text-align: center;
 }

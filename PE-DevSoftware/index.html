@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br"><!-- página inicial do CV -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,22 +55,31 @@
             </table>
         </aside>
 
-        <footer id="rodape"> <!-- footer do index.html, onde fica o menu de navegação, com chamada da função mudaFoto() e o script Date(), que mostra data e hora de acesso ao CV -->
+        <footer id="rodape-principal"> <!-- footer do index.html, onde fica o menu de navegação, com chamada da função mudaFoto() e o script Date(), que mostra data e hora de acesso ao CV -->
             <nav id="menu">
                 <h1>Menu</h1>
                 <ul type="disc">
-                    <li onmouseover="mudaFoto(4)" onmouseout="mudaFoto(2)"><a href="formacao-academica.html">Formação Acadêmica</a></li> <!-- chamada da função mudaFoto() para mostrar ícone do diploma -->
+                    <li><a href="formacao-academica.html">Formação Acadêmica</a></li>
                     <li><a href="cursos-realizados.html">Cursos Realizados</a></li>
                     <li><a href="exp-profissional.html">Experiência Profissional</a></li>
+                    <li><a href="contato.html">Contato</a></li><!-- página criada para o formulário de contato -->
+                    <li><a href="creditos.html">Créditos</a></li><!-- página criada para abrigar os créditos de mídias utilizadas no projeto -->
                 </ul>
             </nav>
+            <div id="radio"><!--div criada para inserir o áudio-->
+                <audio id="musica" controls="controls">
+                    <source src="_media/quick-mechanical-keyboard-14391.mp3" type="audio/mpeg"/>
+                    <source src="_media/quick-mechanical-keyboard-14391.m4a" type="audio/x-aac"/>
+                    <source src="_media/quick-mechanical-keyboard-14391.ogg" type="audio/ogg"/>
+                    Desculpe, mas não foi possível carregar o áudio.
+                </audio>
+            </div>
             <p id="script-cv"> <!-- parágrafo personalizado para o script Date(), para que ficasse centralizado e em uma fonte menor -->
                 <script>
                         document.write("Currículo acessado em: " + Date());
                 </script>
             </p>
         </footer>
-
     </div>
     <script language="javascript" src="_js/script.js"></script> <!-- chamada do arquivo .js onde estão os códigos das funções mudaFoto() e status(nome) -->
 </body>
