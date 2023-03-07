@@ -11,7 +11,7 @@ int main(void) {
 
     struct horario agora;   //struct horário = tipo da estrutura; agora = nome da estrutura.
 
-    agora.horas = 17;   //definição de valores para as variáveis que compoem a estrutura.
+    agora.horas = 17;   //inicialização de valores para as variáveis que compoem a estrutura.
     agora.minutos = 54;
     agora.segundos = 33;
 
