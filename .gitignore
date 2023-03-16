@@ -17,3 +17,8 @@ nb-configuration.xml
 *.jar
 *.war
 *.ear
+
+# Database Files #
+.databases/
+*.mwb
+*.mwb.bak
