@@ -1,4 +1,4 @@
-//exercícios sobre matrizes
+//exercicios sobre matrizes
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

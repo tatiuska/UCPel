@@ -1,4 +1,4 @@
-//exercícios sobre vetores
+//exercicios sobre vetores
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -30,7 +30,7 @@ main() {
         }
     }
 
-//Essa última estrutura condicional não funcionou
+//Essa ultima estrutura condicional nao funcionou
     printf("\n\nO maior elemento do vetor e: | ");
     for(posicao=0; posicao<elementos; posicao++) {
         if(vetor[posicao] > maior) {

@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-#define numeroDeAlunos 4 //solução de comentário no vídeo, pois estava dando erro na hora de compilar
+#define numeroDeAlunos 4 //solucao de comentario no video, pois estava dando erro na hora de compilar
 #define bimestresAnuais 4 //"error: variable-sized object may not be initialized"
 
 int main(void) {
 
-    //const int bimestresAnuais = 4;  //essas duas variáveis não são necessárias para criar o programa,
-    //const int numeroDeAlunos = 4;   //foram inseridas para melhor ilustrar a situação.
+    //const int bimestresAnuais = 4;  //essas duas variaveis nao sao necessarias para criar o programa,
+    //const int numeroDeAlunos = 4;   //foram inseridas para melhor ilustrar a situacao.
 
     float notasAlunos[numeroDeAlunos][bimestresAnuais] = {0};
     float mediasAlunos[numeroDeAlunos] = {0};
@@ -19,7 +19,7 @@ int main(void) {
             media += notasAlunos[aluno][notas];
         }
         mediasAlunos[aluno] = media / bimestresAnuais;
-        media = 0;  //zerando a variável média para que não se some a média de todos os alunos.
+        media = 0;  //zerando a variavel media para que nao se some a media de todos os alunos.
         printf("Insira as 4 notas do aluno %i:\n\n", aluno + 2);
     }
 

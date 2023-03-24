@@ -1,17 +1,17 @@
-//exercício para revisar estruturas
+//exercicio para revisar estruturas
 #include <stdio.h>
 
 int main(void) {
 
-    struct horario {    //definição de uma estrutura
+    struct horario {    //definicao de uma estrutura
         int horas;
         int minutos;
         int segundos;
     };
 
-    struct horario agora;   //struct horário = tipo da estrutura; agora = nome da estrutura.
+    struct horario agora;   //struct horario = tipo da estrutura; agora = nome da estrutura.
 
-    agora.horas = 17;   //inicialização de valores para as variáveis que compoem a estrutura.
+    agora.horas = 17;   //inicializacao de valores para as variaveis que compoem a estrutura.
     agora.minutos = 54;
     agora.segundos = 33;
 
