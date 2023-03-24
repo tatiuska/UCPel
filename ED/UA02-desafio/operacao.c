@@ -3,6 +3,7 @@
 #include <string.h>
 #include "operacao.h"
 int flag = 0;
+
 //Funcao para a criacao de numeros
 void criar(Matematica *matematica, int valor1, int valor2){
     matematica -> valor1 = valor1;
