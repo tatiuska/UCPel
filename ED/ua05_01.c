@@ -1,4 +1,4 @@
-/* Código do capítulo do livro sobre pilhas, está cheio de erros */
+/* Código do capítulo do livro sobre pilhas, não roda */
 #include <stdio.h>
 #include <stdlib.h>
 
