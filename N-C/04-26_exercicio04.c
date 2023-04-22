@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
+//arrumar a parte do char e do if referente a isso
+
 int main(){
 
     //variaveis
