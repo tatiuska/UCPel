@@ -2,37 +2,59 @@
 #include <stdlib.h>
 #include <string.h>
 
-//finalizar
+//programa que le uma nota, o numero de faltas de um aluno, e escreve seu conceito.
+//caso o aluno tenha mais do que 20 faltas, ha uma reducao no conceito.
+//optei por imprimir a nota e o numero de faltas, junto com o conceito nos dados de saida.
+
 int main(){
 
     //variaveis
-    float nota_inicial, nota_final;
+    float nota;
     int faltas;
     char conceito;
 
     //Dados de Entrada
     printf("Informe sua nota: \n");
-    scanf("%f", &nota_inicial);
+    scanf("%f", &nota);
 
     printf("Informe seu numero de faltas: \n");
     scanf("%d", &faltas);
 
     //Processamento e dados de saída
-    if(faltas < 20 && (nota_inicial > 9.0 && nota_inicial <= 10)){
+    //Estrutura condicional para o caso do aluno ter até 20 faltas
+    if(faltas <= 20 && (nota > 9.0 && nota <= 10.0)){
         conceito = 'A';
-    } else if(faltas < 20 && (nota_inicial > 7.5 && nota_inicial <= 8.9)){
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else if(faltas <= 20 && (nota > 7.5 && nota <= 8.9)){
         conceito = 'B';
-    } else if(faltas < 20 && (nota_inicial > 5.0 && nota_inicial <= 7.4)){
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else if(faltas <= 20 && (nota > 5.0 && nota <= 7.4)){
         conceito = 'C';
-    } else if(faltas < 20 && (nota_inicial > 4.0 && nota_inicial <= 4.9)){
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else if(faltas <= 20 && (nota > 4.0 && nota <= 4.9)){
         conceito = 'D';
-    } else if(faltas < 20 && (nota_inicial = 0.0 && nota_inicial <= 3.9)){
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else if(faltas <= 20 && (nota >= 0.0 && nota <= 3.9)){
         conceito = 'E';
-    }
-
-    //continuar
-    //esse printf era para testar se as variaveis estavam funcionando, apagar depois.
-    printf("Sua nota eh %.2f, voce tem %d faltas e seu conceito final eh: %c", nota_inicial, faltas, conceito);
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else if(faltas > 20 && (nota > 9.0 && nota <= 10.0)){  //aqui começam os casos para mais de 20 faltas.
+        conceito = 'B';
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else if(faltas > 20 && (nota > 7.5 && nota <= 8.9)){
+        conceito = 'C';
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else if(faltas > 20 && (nota > 5.0 && nota <= 7.4)){
+        conceito = 'D';
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else if(faltas > 20 && (nota > 4.0 && nota <= 4.9)){
+        conceito = 'E';
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else if(faltas > 20 && (nota >= 0.0 && nota <= 3.9)){
+        conceito = 'E';
+        printf("Sua nota: %.1f \nSuas faltas: %d \nSeu conceito final: %c\n", nota, faltas, conceito);
+    } else {
+        printf("Informe uma nota valida!");
+    };
 
     return 0;
 
