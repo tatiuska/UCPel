@@ -2,7 +2,7 @@
 #include <math.h>
 #include <string.h>
 
-//arrumar codigo
+//programa que le a altura e o peso de uma pessoa e mostre uma classificacao de acordo com uma tabela
 int main(){
 
     //variaveis
