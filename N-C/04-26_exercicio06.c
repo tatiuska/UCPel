@@ -16,8 +16,66 @@ int main(){
     scanf("%d", &tempo_servico);
 
     //processamento
+    if(salario_atual <= 500.00 && tempo_servico < 1){
+        reajuste = salario_atual + (salario_atual * 0.25);
+        printf("Você nao tem direito a bonus\n");
+    } else if((salario_atual > 500.00 || salario_atual <= 1000.00) && tempo_servico < 1){
+        reajuste = salario_atual + (salario_atual * 0.20);
+        printf("Voce nao tem direito a bonus\n");
+    } else if((salario_atual > 1000.00 || salario_atual <= 1500.00) && tempo_servico < 1){
+        reajuste = salario_atual + (salario_atual * 0.15);
+        printf("Voce nao tem direito a bonus\n");
+    } else if((salario_atual > 1500.00 || salario_atual <= 2000.00) && tempo_servico < 1){
+        reajuste = salario_atual + (salario_atual * 0.10);
+        printf("Voce nao tem direito a bonus\n");
+    } else if(salario_atual > 2000.00 && tempo_servico < 1){
+        printf("Voce nao tem direito a rejuste\n");
+        printf("Voce nao tem direito a bonus\n");
+    } else if(salario_atual <= 500.00 && (tempo_servico > 1 || tempo_servico <= 3)){
+        reajuste = salario_atual + (salario_atual * 0.25);
+        bonus = 100.00;
+    } else if((salario_atual > 500.00 || salario_atual <= 1000.00) && (tempo_servico > 1 || tempo_servico <= 3)){
+        reajuste = salario_atual + (salario_atual * 0.20);
+        bonus = 100.00;
+    } else if((salario_atual > 1000.00 || salario_atual <= 1500.00) && (tempo_servico > 1 || tempo_servico <= 3)){
+        reajuste = salario_atual + (salario_atual * 0.15);
+        bonus = 100.00;
+    } else if((salario_atual > 1500.00 || salario_atual <= 2000.00) && (tempo_servico > 1 || tempo_servico <= 3)){
+        reajuste = salario_atual + (salario_atual * 0.10);
+        bonus = 100.00;
+    } else if(salario_atual > 2000.00 && (tempo_servico > 1 || tempo_servico <= 3)){
+        printf("Voce nao tem direito a reajuste\n");
+        bonus = 100.00;
+    } else if(salario_atual <= 500.00 && (tempo_servico > 4 || tempo_servico <= 6)){
+        reajuste = salario_atual + (salario_atual * 0.25);
+        bonus = 200.00;
+    } else if((salario_atual > 500.00 || salario_atual <= 1000.00) && (tempo_servico > 4 || tempo_servico <= 6)){
+        reajuste = salario_atual + (salario_atual * 0.20);
+        bonus = 200.00;
+    } else if((salario_atual > 1000.00 || salario_atual <= 1500.00) && (tempo_servico > 4 || tempo_servico <= 6)){
+        reajuste = salario_atual + (salario_atual * 0.15);
+        bonus = 200.00;
+    } else if((salario_atual > 1500.00 || salario_atual <= 2000.00) && (tempo_servico > 4 || tempo_servico <= 6)){
+        reajuste = salario_atual + (salario_atual * 0.10);
+        bonus = 200.00;
+    } else if(salario_atual > 2000.00 && (tempo_servico > 4 || tempo_servico <= 6)){
+        printf("Voce nao tem direito a reajuste\n");
+        bonus = 200.00;
+    } else if(salario_atual > 500.00 && (tempo_servico > 7 || tempo_servico <= 10)){
+        reajuste = salario_atual + (salario_atual * 0.25);
+
+    }
+
+    salario_final = reajuste + bonus;
+
+
+
+
+
+
+
     //estrutura condicional para calculo do reajuste de salario
-    if(salario_atual <= 500.00){
+    /*if(salario_atual <= 500.00){
         reajuste = salario_atual + (salario_atual * 0.25);
     } else if(salario_atual > 501.00 && salario_atual <= 1000.00){
         reajuste = salario_atual + (salario_atual * 0.20);
@@ -47,7 +105,7 @@ int main(){
         salario_final = salario_atual + bonus;
     } else {
         salario_final = reajuste + bonus;
-    }
+    }*/
 
     //dados de saida
     printf("Seu salario final: %.2f", salario_final);
