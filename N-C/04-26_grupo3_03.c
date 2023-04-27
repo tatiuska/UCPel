@@ -11,8 +11,7 @@ int main(){
     op_bom = 0;
 
     //dados de entrada e processamento
-    for(int espect = 0; espect < 3; espect++)
-    {
+    for(int espect = 0; espect < 3; espect++){
 
         printf("Informe sua idade: \n");
         scanf("%d", &idade);
@@ -20,18 +19,15 @@ int main(){
         printf("O que achou do filme? \n3 - Otimo \n2 - Bom \n1 - Regular\n\n");
         scanf("%d", &opiniao);
 
-        if(opiniao == 3)
-        {
+        if(opiniao == 3){
             med_idade = med_idade + idade;
         }
 
-        if(opiniao == 1)
-        {
+        if(opiniao == 1){
             op_reg = op_reg + 1;
         }
 
-        if(opiniao == 2)
-        {
+        if(opiniao == 2){
             op_bom = op_bom + 1;
         }
     }
