@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include <string.h>
 
 //programa que le a altura e o peso de uma pessoa e mostre uma classificacao de acordo com uma tabela
