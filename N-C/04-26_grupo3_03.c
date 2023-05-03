@@ -11,7 +11,7 @@ int main(){
     op_bom = 0;
 
     //dados de entrada e processamento
-    for(int espect = 0; espect < 3; espect++){
+    for(int espect = 0; espect < 10; espect++){
 
         printf("Informe sua idade: \n");
         scanf("%d", &idade);
@@ -33,12 +33,12 @@ int main(){
     }
 
     med_idade = med_idade / 3;
-    op_bom = op_bom / 100;
+    op_bom = (op_bom * 100)/10;
 
     //dados de saida
     printf("Media de idade de quem respondeu 3 - Otimo: %d \n", med_idade);
     printf("Quantidade de pessoas que respondeu 1 - Regular: %d \n", op_reg);
-    printf("Porcentagem de pessoas que respondeu 2 - Bom: %d \n", op_bom);
+    printf("Porcentagem de pessoas que respondeu 2 - Bom: %d%% \n", op_bom);
 
     return 0;
 }
