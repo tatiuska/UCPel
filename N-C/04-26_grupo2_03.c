@@ -32,7 +32,7 @@ int main(){
         }
     }
 
-    med_idade = med_idade / 3;
+    med_idade = med_idade / 10;
     op_bom = (op_bom * 100)/10;
 
     //dados de saida
