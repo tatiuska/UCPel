@@ -10,12 +10,12 @@
     <h1>Dados do Aluno:</h1>
     <?php 
         //nome, cpf, data de nascimento, número de matrícula, semestre de ingresso, curso
-        $nome = "Tatiana W.";
+        $nome[30] = "Tatiana W.";
         $cpf = 50273313800;
-        $d_nasc = "04/04/1980";
+        $d_nasc[10] = "04/04/1980";
         $matr = 7651282022;
-        $s_ingresso = "01/2023";
-        $curso = "Análise e Desenvolvimento de Sistemas";
+        $s_ingresso[10] = "01/2023";
+        $curso[50] = "Análise e Desenvolvimento de Sistemas";
 
         echo "<p><b>Nome:</b> $nome</p>
             <p><b>CPF:</b> $cpf</p>
