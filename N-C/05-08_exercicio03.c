@@ -1,31 +1,30 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-//programa para verificar se um numero de quatro digitos eh um palindromo
-//USAR FUNCAO STRCMP - e fazer vetores para receber os numeros digitados e para inverter o numero, e entao comparar
 int main(){
 
     //variaveis
-    int num[10];
-    int rev[10];
-
+    int numero, numero_inverso, restante_numero, numero_original;
 
     //dados de entrada
     printf("Digite um numero inteiro de quatro digitos: \n");
-    scanf("%d", &num);
+    scanf("%d", &numero);
 
-    //processamento e dados de saida
-    while(num != 0){
-        num_reverso = num % 10;
-        inv = (inv * 10) + num_reverso;
-        num = num / 10;
+    //inicializacao de variaveis
+    numero_original = numero;
+    numero_inverso = 0;
+
+    //processamento
+    while(numero != 0){
+        restante_numero = numero % 10;
+        numero_inverso = (numero_inverso * 10) + restante_numero;
+        numero = numero / 10;
     }
 
-    if(num_reverso == inv){
-        printf("%d eh um numero palindromo.\n", num);
+    //processamento e dados de saída
+    if(numero_original == numero_inverso){
+        printf("O numero %d eh um palindromo.\n", numero_original);
     } else {
-        printf("%d nao eh um numero palindromo.\n", num);
+        printf("O numero %d nao eh um palindromo.\n", numero_original);
     }
 
     return 0;
