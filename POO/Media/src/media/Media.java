@@ -11,9 +11,9 @@ public class Media {
             this.nota1 = nota1;
             this.nota2 = nota2;
             
-            media = (nota1 + nota2)/2;
-            
+            media = (nota1 + nota2)/2;        
         }
+        
         public double retornaMedia(){
             return media;
         }
