@@ -24,3 +24,5 @@ nb-configuration.xml
 *.mwb
 *.mwb.bak
 /POO/CadastroAlunos/nbproject/private/
+/POO/Vehicle/nbproject/private/
+/POO/VehicleDemo/nbproject/private/
