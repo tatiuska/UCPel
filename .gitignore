@@ -20,7 +20,6 @@ nb-configuration.xml
 *.ear
 
 # Database Files #
-/IA-ML/primeiros-estudos
 .databases/
 *.mwb
 *.mwb.bak
