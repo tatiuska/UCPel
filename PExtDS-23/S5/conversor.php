@@ -106,33 +106,7 @@
                         }
                     break;
                     
-                    /*
-                    //Iene
-                    case '2':
-                        //Switch/Case aninhado para as opções de moeda2
-                        switch ($moeda2) {
-                            //Dólar Americano
-                            case '5':
-                            $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaPeriodo(moeda=@moeda,dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@moeda=\'USD\'&@dataInicial=\''. $inicio .'\'&@dataFinalCotacao=\''. $fim .'\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao';
-
-                            $dados = json_decode(file_get_contents($url), true);
-        
-                            $cotacao = $dados["value"][0]["cotacaoCompra"];
-    
-                            //Valor informado
-                            $iene = $_POST["valor"] ?? 0;
-    
-                            //Equivalência em Dólares Americanos
-                            $dolar = $iene / $cotacao;
-    
-                            //Mostrar o resultado - utlizando a biblioteca intl
-                            $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
-                            echo "<p>Seus " . numfmt_format_currency($padrao, $iene, "JPY") . " equivalem a <strong>" . numfmt_format_currency($padrao, $dolar, "USD") . "</strong></p>";
-                            break;
-                            
-                        }
-
-                    break;*/
+                    //Os outros casos ainda serão desenvolvidos.
                 }
             ?>
             <button onclick="javascript:history.go(-1)"><< voltar</button>
