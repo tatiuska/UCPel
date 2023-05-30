@@ -44,6 +44,7 @@ p {
     white-space: normal;
 }
 
+/* Formulário para conversão */
 div.formulario {
     width: 380px;
     height: 380px;
@@ -97,6 +98,7 @@ input[type=submit]:hover {
     background-color: rgb(36, 88, 70);
 }
 
+/* Footer da Página */
 footer {
     height: 100px;
 }
