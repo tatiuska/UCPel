@@ -1,0 +1,11 @@
+# C, C++ files #
+*.exe
+*.o
+*.lib
+*.so
+*.dll
+o.obj
+a.out
+*.swp
+.~
+thumbs.db
