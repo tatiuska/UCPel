@@ -19,6 +19,18 @@ nb-configuration.xml
 *.war
 *.ear
 
+# C, C++ files #
+*.exe
+*.o
+*.lib
+*.so
+*.dll
+o.obj
+a.out
+*.swp
+.~
+thumbs.db
+
 # Database Files #
 .databases/
 *.mwb
@@ -31,3 +43,4 @@ nb-configuration.xml
 /POO/Oficina/nbproject/private/
 /POO/Area/nbproject/private/
 /POO/Encapsulamento/nbproject/private/
+/POO/Locadora/nbproject/private/
