@@ -68,4 +68,15 @@ int main(){
     cout << "\n";
     t2.mostrar();
     cout << "\n";
+
+    c.set_rodas(4);
+    c.set_pass(6);
+    c.set_tipo(van);
+    c.mostrar();
+
+#ifdef WIN32
+    system("pause");
+#endif // WIN32
+
+    return 0;
 }
