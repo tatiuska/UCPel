@@ -1,6 +1,6 @@
 package escola;
 
-public class Colaborador {
+public abstract class Colaborador {
     private String logradouro;
     private int numero;
     private String bairro;
