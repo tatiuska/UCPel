@@ -1,12 +1,12 @@
 package escola;
 
 public class PJ extends Colaborador {
-    private String razao_social;
-    private String nome_fantasia;
-    private String inscricao_municipal;
-    private String inscricao_estadual;
-    private String cnpj;
-    private String website;
+    public String razao_social;
+    public String nome_fantasia;
+    public String inscricao_municipal;
+    public String inscricao_estadual;
+    public String cnpj;
+    public String website;
     
     public void PJ(String razao_social, String nome_fantasia, String inscricao_municipal, String inscricao_estadual, String cnpj, String website){
         this.razao_social = razao_social;
@@ -63,5 +63,89 @@ public class PJ extends Colaborador {
     
     public void setWebsite(String website){
         this.website = website;
+    }
+    
+    //Métodos Get
+    
+    @Override
+    public String getLogradouro(){
+        return logradouro;
+    }
+    
+    @Override
+    public int getNumero(){
+        return numero;
+    }
+    
+    @Override
+    public String getBairro(){
+        return bairro;
+    }
+
+    @Override
+    public String getCidade(){
+        return cidade;
+    }
+    
+    @Override
+    public String getUf(){
+        return uf;
+    }
+    
+    @Override
+    public String getTelefone(){
+        return telefone;
+    }
+    
+    @Override
+    public String getEmail(){
+        return email;
+    }
+    
+    @Override
+    public String getDisciplina(){
+        return disciplina;
+    }
+    
+    //Métodos Set
+    
+    @Override
+    public void setLogradouro(String logradouro){
+        this.logradouro = logradouro;
+    }
+    
+    @Override
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
+    
+    @Override
+    public void setBairro(String bairro){
+        this.bairro = bairro;
+    }
+
+    @Override
+    public void setCidade(String cidade){
+        this.cidade = cidade;
+    }
+         
+    @Override
+    public void setUf(String uf){
+        this.uf = uf;
+    }
+    
+    @Override
+    public void setTelefone(String telefone){
+        this.telefone = telefone;
+    }
+        
+    @Override
+    public void setEmail(String email){
+        this.email = email;
+    }
+        
+    @Override
+    public void setDisciplina(String disciplina){
+        this.disciplina = disciplina;
     }
 }

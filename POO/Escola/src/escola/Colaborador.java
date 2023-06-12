@@ -1,14 +1,14 @@
 package escola;
 
 public abstract class Colaborador {
-    private String logradouro;
-    private int numero;
-    private String bairro;
-    private String cidade;
-    private String uf;
-    private String telefone;
-    private String email;
-    private String disciplina;
+    public String logradouro;
+    public int numero;
+    public String bairro;
+    public String cidade;
+    public String uf;
+    public String telefone;
+    public String email;
+    public String disciplina;
     
     public void Colaborador(String logradouro, int numero, String bairro, String cidade, String uf, String telefone, String email, String disciplina){
         this.logradouro = logradouro;
@@ -21,67 +21,35 @@ public abstract class Colaborador {
         this.disciplina = disciplina;
     }
     
-    public String getLogradouro(){
-        return logradouro;
-    }
+    public abstract String getLogradouro();
     
-    public void setLogradouro(String logradouro){
-        this.logradouro = logradouro;
-    }
+    public abstract void setLogradouro(String logradouro);
     
-    public int getNumero(){
-        return numero;
-    }
+    public abstract int getNumero();
     
-    public void setNumero(int numero){
-        this.numero = numero;
-    }
+    public abstract void setNumero(int numero);
     
-    public String getBairro(){
-        return bairro;
-    }
+    public abstract String getBairro();
     
-    public void setBairro(String bairro){
-        this.bairro = bairro;
-    }
+    public abstract void setBairro(String bairro);
     
-    public String getCidade(){
-        return cidade;
-    }
+    public abstract String getCidade();
     
-    public void setCidade(String cidade){
-        this.cidade = cidade;
-    }
+    public abstract void setCidade(String cidade);
     
-    public String getUf(){
-        return uf;
-    }
+    public abstract String getUf();
     
-    public void setUf(String uf){
-        this.uf = uf;
-    }
+    public abstract void setUf(String uf);
     
-    public String getTelefone(){
-        return telefone;
-    }
+    public abstract String getTelefone();
     
-    public void setTelefone(String telefone){
-        this.telefone = telefone;
-    }
+    public abstract void setTelefone(String telefone);
     
-    public String getEmail(){
-        return email;
-    }
+    public abstract String getEmail();
     
-    public void setEmail(String email){
-        this.email = email;
-    }
+    public abstract void setEmail(String email);
     
-    public String getDisciplina(){
-        return disciplina;
-    }
+    public abstract String getDisciplina();
     
-    public void setDisciplina(String disciplina){
-        this.disciplina = disciplina;
-    }
+    public abstract void setDisciplina(String disciplina);
 }
