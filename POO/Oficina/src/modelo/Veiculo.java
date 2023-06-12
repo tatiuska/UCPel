@@ -6,7 +6,7 @@ public class Veiculo {
     private int ano;
     private String fabricante;
     private String cor;
-    private Cliente cliente;
+    private String cliente;
     
     public void Veiculo(String placa, String modelo, int ano, String fabricante, String cor, String cliente){
         this.placa = placa;
@@ -17,6 +17,7 @@ public class Veiculo {
         this.cliente = cliente;
     }
     
+    @Override
     public String toString(){
         return cliente + "Veículo: " + "," + placa + "," + ano + "," + fabricante + "," + modelo + "," + cor;
     }
@@ -65,7 +66,7 @@ public class Veiculo {
         return cliente;
     }
     
-    public void setCliente(Cliente cliente){
+    public void setCliente(String cliente){
         this.cliente = cliente;
     }
 }

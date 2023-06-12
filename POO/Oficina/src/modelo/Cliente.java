@@ -15,6 +15,7 @@ public class Cliente {
         this.email = email;
     }
     
+    @Override
     public String toString(){
         return cpf + "," + nome + "," + endereco + "," + fone + "," + email;
     }
