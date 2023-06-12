@@ -6,7 +6,7 @@ public class Imprimir {
     private String nome;
     private String sobrenome;
     
-    public void ImprimirTela(Streing nome, String sobrenome){
+    public void ImprimirTela(String nome, String sobrenome){
         nome = JOptionPane.showInputDialog("Digite sey nome: ");
         sobrenome = JOptionPane.showInputDialog("Digite seu sobrenome: ");
         
