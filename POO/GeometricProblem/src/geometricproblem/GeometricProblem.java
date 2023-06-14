@@ -1,3 +1,4 @@
+// Demostração de que o uso de uma interface não é o mais adequado para resolver esse problema, pois variáveis acabaram se repetindo ao longo das classes.
 package geometricproblem;
 
 public class GeometricProblem {
