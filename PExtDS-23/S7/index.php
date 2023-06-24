@@ -8,6 +8,8 @@
     <title>Formulário para Cadastro de Alunos</title>
     <!-- Link para carregamento do style.css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Link para o script.js -->
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
     <?php 
@@ -15,9 +17,11 @@
         $nome = $_POST['nome'] ?? "Não informado"; // Uso do operador de coalescência nula caso o usuário não preencha nada
         $cpf = $_POST['cpf'] ?? "Não informado";
         $d_nasc = $_POST['d_nasc'] ?? "Não informado";
+        $tel = $_POST['tel'] ?? "Não informado"; // Inserção de mais dois campos no formulário (literal caractere) - telefone
         $matr = $_POST['matr'] ?? "Não informado";
         $s_ingresso = $_POST['s_ingresso'] ?? "Não informado";
         $curso = $_POST['curso'] ?? "Não informado";
+        $formando = $_POST['formando'] ?? "Não informado"; // Inserção de novo campo no formulário (numérico lógico) - formando
     ?>
     <header>
         <img src="./image/img01.svg" alt="Faça seu cadastro preenchendo o formulário abaixo." width="400px" height="300px">
@@ -41,6 +45,10 @@
                     <input type="date" name="d_nasc" id="idNasc" value="<?=$d_nasc?>">
                 </p>
                 <p>
+                    <label for="tel">Telefone: </label>
+                    <input type="text" name="tel" id="idTel" value="<?=$tel?>">
+                </p>
+                <p>
                     <label for="matr">Matrícula: </label>
                     <input type="text" name="matr" id="idMatr" value="<?=$matr?>">
                 </p>
@@ -50,7 +58,15 @@
                 </p>
                 <p>
                     <label for="curso">Curso: </label>
-                    <input type="text" name="curso" id="id_curso" value="<?=$curso?>">
+                    <input type="text" name="curso" id="idCurso" value="<?=$curso?>">
+                </p>
+                <p>
+                    <!-- Alteração no formulário para campo booleano do BD, utlizando a tag select ao invés de input -->
+                    <label for="formando">Está no último semestre do curso?</label>
+                    <select name="formando" id="idFormando" value="<?=$formando?>">
+                        <option value="S">Sim</option>
+                        <option value="N">Não</option>
+                    </select>
                 </p>
                 <p>
                     <!-- Botão para enviar as informações -->
@@ -69,9 +85,11 @@
                     echo "<b>Nome:</b> $nome<br>
                     <b>CPF:</b> $cpf<br>
                     <b>Data de Nascimento:</b> $d_nasc<br>
+                    <b>Telefone:</b> $tel<br>
                     <b>Número de Matrícula:</b> $matr<br>
                     <b>Semestre de Ingresso:</b> $s_ingresso<br>
-                    <b>Curso:</b> $curso</p>";
+                    <b>Curso:</b> $curso<br>
+                    <b>Formando?</b> $formando</p>";
                 ?>
             </section>
         </div>
