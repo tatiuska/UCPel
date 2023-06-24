@@ -5,3 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap');
 
 /* Tags principais */
+* {
+    background-color: rgb(255, 255, 255);
+}
+
+nav #navbar {
+    background-color: rgb(49, 106, 190);
+    height: 110px;
+}

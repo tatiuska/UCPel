@@ -16,7 +16,7 @@
     ?>
 <body>
     <!-- Navbar com menu -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 Instituto de Menores Dom Antônio Zattera 
