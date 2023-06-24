@@ -6,10 +6,61 @@
 
 /* Tags principais */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
     background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
-nav #navbar {
-    background-color: rgb(49, 106, 190);
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    color: rgb(230, 134, 78);
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+/* Área de Header e Navbar */
+div#header-navbar {
+    display: flex;
+    width: auto;
     height: 110px;
 }
+
+header {
+    display: flex;
+    background-color: rgb(49, 106, 190);
+    width: auto;
+    height: 110px;
+    margin-top: 0;
+}
+
+nav.navbar {
+    position: relative;
+    top: 0;
+}
+
+div#navbar-links a {
+    color: #000000;
+}
+
+div#navbar-links a:hover {
+    font-weight: bold;
+    color: #DDA755;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(230, 134, 78);
+}
+
+div#footer {
+    background-color: #DDA755;
+}
+
