@@ -65,7 +65,7 @@ div#titulo {
 /* Formulário */
 div#formulario {
     width: 380px;
-    height: 600px;
+    height: 800px; /* ajuste no tamanho da div para receber novos campos do formulário (telefone e formando) */
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     justify-content: center;
@@ -122,7 +122,7 @@ input[type=submit]:hover {
 div#resultado {
     background-color: rgb(255, 255, 255);
     width: 380px;
-    height: 350px;
+    height: 450px; /* ajuste no tamanho da div para novos campos do resultado do formulário (telefone e formando) */
     margin-top: 50px;
     border-radius: 10px;
     display: block;
