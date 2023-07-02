@@ -10,8 +10,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+}
+
+body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+
 }
 
 html {
@@ -28,6 +32,8 @@ h1 {
 
 /* Área de Header e Navbar */
 div#header-navbar {
+    position: relative;
+    justify-content: center;
     display: flex;
     width: auto;
     height: 110px;
@@ -55,12 +61,29 @@ div#navbar-links a:hover {
     color: #DDA755;
 }
 
+/* Área de login */
+div#login {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    width: 450px;
+    height: 500px;
+    display: flex;
+}
+
 /* Footer */
 footer {
-    background-color: rgb(230, 134, 78);
+    background-color: rgb(49, 106, 190);
+    position: absolute;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    display: flex;
 }
 
-div#footer {
-    background-color: #DDA755;
+div#conteudo-final {
+    padding-top: 25px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    justify-content: center;
 }
-
