@@ -8,36 +8,43 @@
     <!-- Link para o CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- CSS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous" defer></script>
 </head>
     <?php 
         include "./php/conexao.php";
     ?>
 <body>
     <!-- Header e Navbar -->
-    <header class="navbar navbar-expand-lg bd-navbar sticky-top">
-        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Menu de navegação">
-            <a class="navbar-brand" href="#">
-                <p>
-                    Instituto de Menores
-                    Dom Antônio Zattera
-                </p> 
-                <img src="./img/logo_IMDAZ.png" alt="Logo" width="128" height="58" class="d-inline-block align-text-top">
-            </a>
-            <ul class="nav navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-item nav-link" href="#" id="contato-menu">Entrar</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-fluid" id="header-navbar">
+        <header class="row">
+            <nav class="navbar navbar-expand-sm" aria-label="Menu de navegação">
+                <div class="col-12 d-flex flex-row p-2" id="left">
+                    <div class="col-md-4" id="title">
+                        <h1>Instituto de Menores<br>
+                        Dom Antônio Zattera</h1>
+                    </div>
+                    <div class="col-md-4" id="img">
+                        <img src="./img/logo_IMDAZ.png" alt="Logo" width="128" height="58" class="d-inline-block align-text-top">
+                    </div>
+                    <div class="col-md-4 d-flex flex-row-reverse" id="right">
+                        <div class="collapse navbar-collapse" id="navbar-links">
+                            <ul class="nav navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-item nav-link" href="#" id="entrar">Entrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
     <main>
         <div class="container" id="login">
             <div class="row">
-                <div class="col-12">
-                    <h1>Sistema de Gestão de Pessoas</h1>
+                <div class="col-12" id="area-login">
+                    <h2>Sistema de Gestão de Pessoas</h2>
                     <p>Faça seu login aqui:</p>
                 </div>
             </div>

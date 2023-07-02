@@ -6,16 +6,14 @@
 
 /* Tags principais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Inter', sans-serif;
 }
 
 body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-
 }
 
 html {
@@ -24,32 +22,67 @@ html {
 }
 
 h1 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+h2 {
     font-size: 24px;
     color: rgb(230, 134, 78);
     margin-left: 20px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 /* Área de Header e Navbar */
 div#header-navbar {
-    position: relative;
-    justify-content: center;
-    display: flex;
-    width: auto;
-    height: 110px;
+    position: fixed;
+    text-align: center;
+    justify-content: space-around;
+    display: inline-flex;
+    width: 100%;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 106, 190);
+    margin-top: 0px;
+    flex-direction: row;
 }
 
-header {
-    display: flex;
-    background-color: rgb(49, 106, 190);
-    width: auto;
-    height: 110px;
-    margin-top: 0;
+div#header-navbar, a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+div#header-navbar, a:hover {
+    font-weight: bold;
 }
 
 nav.navbar {
     position: relative;
+    display: flex;
+    width: 100%;
     top: 0;
+}
+
+header {
+    display: table-cell;
+}
+
+div#left {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+div#text {
+    vertical-align: text-bottom;
+}
+
+div#img {
+    vertical-align: middle;
 }
 
 div#navbar-links a {
@@ -64,17 +97,24 @@ div#navbar-links a:hover {
 /* Área de login */
 div#login {
     position: relative;
-    justify-content: center;
+    justify-self: center;
     display: flex;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+
+div#area-login {
     width: 450px;
     height: 500px;
     display: flex;
+    justify-content: center;
 }
 
 /* Footer */
 footer {
     background-color: rgb(49, 106, 190);
-    position: absolute;
+    position: fixed;
+    bottom: 0px;
     justify-content: center;
     height: 70px;
     width: 100%;
@@ -82,8 +122,9 @@ footer {
 }
 
 div#conteudo-final {
-    padding-top: 25px;
+    padding-top: 28px;
     color: rgb(255, 255, 255);
     position: relative;
-    justify-content: center;
+    text-align: center;
+    font-size: 12px;
 }
