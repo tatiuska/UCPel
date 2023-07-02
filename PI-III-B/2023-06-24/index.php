@@ -35,31 +35,33 @@
             </nav>
         </div>
     </header>
-    <h1>Sistema de Gestão de Pessoas</h1>
+    <main>
+        <h1>Sistema de Gestão de Pessoas</h1>
         <!-- Fim da página -->
-    <footer>
-        <div class="container-fluid" id="footer">
-            <div class="row" id="footer-row">
-                <div class="col-4" id="social-media">
-                    <p>
-                        <a href="https://github.com/tatiuska" target="_blank" alt="GitHub: tatiuska">
-                            <i class="bi bi-github"></i>
-                        </a> 
-                        <a href="https://linkedin.com/in/tatiana-weska" target="_blank" alt="Linkedin: Tatiana Weska">
-                            <i class="bi bi-linkedin"></i>
-                        </a> 
-                        <a href="https://medium.com/@tatiuska" target="_blank" alt="Medium: @tatiuska">
-                            <i class="bi bi-medium"></i>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-4" id="conteudo-final">
-                    <p>
-                        2023 &copy; Tatiana Weska.
-                    </p>
+        <footer>
+            <div class="container-fluid" id="footer">
+                <div class="row" id="footer-row">
+                    <div class="col-4" id="social-media">
+                        <p>
+                            <a href="https://github.com/tatiuska" target="_blank" alt="GitHub: tatiuska">
+                                <i class="bi bi-github"></i>
+                            </a> 
+                            <a href="https://linkedin.com/in/tatiana-weska" target="_blank" alt="Linkedin: Tatiana Weska">
+                                <i class="bi bi-linkedin"></i>
+                            </a> 
+                            <a href="https://medium.com/@tatiuska" target="_blank" alt="Medium: @tatiuska">
+                                <i class="bi bi-medium"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-4" id="conteudo-final">
+                        <p>
+                            2023 &copy; Projeto Integrador III-B. Desenvolvido por Eduarda Quintana, Leonardo Treichel e Tatiana Weska.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
 </body>
 </html>
