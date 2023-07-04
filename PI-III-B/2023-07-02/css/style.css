@@ -30,16 +30,20 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: bold;
     color: rgb(230, 134, 78);
-    margin-left: 20px;
-    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 p {
     color: rgb(0, 0, 0);
 }
 
+/* Estilos comuns a todas as páginas */
 /* Header e Navbar */
 header {
     background-color: rgb(49, 106, 190);
@@ -48,7 +52,7 @@ header {
 
 div#nav-container {
     width: 100%;
-    position: absolute;
+    position: fixed;
     display: flex;
     height: auto;
     justify-content: space-around;
@@ -58,7 +62,6 @@ div.row {
     width: 100%;
     padding-top: 10px;
     height: auto;
-    vertical-align: middle;
 }
 
 div#left {
@@ -87,10 +90,95 @@ img#logo {
     width: 70%;
 }
 
+
+/* Final da página (Footer) */
+footer {
+    background-color:rgb(49, 106, 190);
+    position: fixed;
+    bottom: 0px;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+div#conteudo-footer, p#footer {
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+/* INDEX.PHP */
 /* Área de Login (Main) */
 div#area-login {
-    margin-top: 50px;
-    margin-left: 520px;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+div#bloco-login {
+    width: 90%;
+    box-sizing: border-box;
     justify-content: center;
 }
 
+/* formulário de login */
+form {
+    width: 700px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+form label {
+    font-size: 12px;
+    width: 50%;
+    color: rgb(90, 91, 90);
+}
+
+form select {
+    width: 50%;
+}
+
+form input {
+    width: 50%;
+    height: 30px;
+
+}
+
+form, p#form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button[type=submit] {
+    width: 50%;
+    background-color: rgb(106,215,97);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: rgb(76, 179, 66);
+}
+
+/* DASHBOARD.PHP */
+/* Estilos da página inicial (dashboard) */
+
+div#menu-cadastro {
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+div#bloco-cadastro {
+    width: 90%;
+    box-sizing: border-box;
+    justify-content: center;
+}

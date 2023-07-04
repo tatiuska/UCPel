@@ -1,4 +1,4 @@
-<!-- Página principal IMDAZ (login)-->
+<!-- Página Inicial (Dashboard) IMDAZ -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,24 +33,21 @@
         </div>
     </header>
     <main>
-        <!-- Área de Login -->
-        <div class="container-fluid" id="area-login">
-            <div class="row">
-                <div class="d-flex mx-auto col-10 col-md-8 col-lg-6" id="bloco-login">
-                    <h2>Sistema de Gestão de Pessoas</h2>
-                    <form action="./php/conexao.php" method="post">
-                        <p id="form">
-                            <label for="email">E-mail:</label><br>
-                            <input type="text" id="email" name="email" required>
+        <div class="container-fluid text-center" id="menu-cadastro">
+            <div class="row row d-flex justify-content-center">
+                <div class="d-flex mx-auto col-10 col-md-8 col-lg-6" id="bloco-cadastro">
+                    <h2>Cadastrar Pessoa</h2>
+                    <div class="col-12" id="opcoes-cadastro">
+                        <p>
+                            Funcionário
+                        </p> 
+                        <p>
+                            Colaborador
                         </p>
-                        <p id="form">
-                            <label for="senha">Senha:</label><br>
-                            <input type="password" id="senha" name="senha" required>
+                        <p>
+                            Aluno
                         </p>
-                        <p id="form">
-                            <button class="btn btn-success" type="submit">Entrar</button>
-                        </p>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
