@@ -1,0 +1,221 @@
+/* Estilos comuns a todas as páginas */
+/* Definição de charset */
+@charset "UTF-8";
+/* Importando a fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap');
+
+/* Configurações gerais */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+h1 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(230, 134, 78);
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(230, 134, 78);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Estilos comuns a todas as páginas */
+/* Header e Navbar */
+header {
+    background-color: rgb(49, 106, 190);
+    height: 80px;
+}
+
+div#nav-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    height: auto;
+}
+
+div.row {
+    width: 100%;
+    padding-top: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#left {
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+div#middle {
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 180px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+div#right {
+    width: 100px;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: end;
+}
+
+img#logo {
+    width: 70%;
+}
+
+
+/* Final da página (Footer) */
+
+
+footer {
+    background-color:rgb(49, 106, 190);
+    position: absolute;
+    bottom: 0px;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+div#conteudo-footer, p#footer {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+/* INDEX.PHP */
+/* Área de Login (Main) */
+div#area-login {
+    display: flex;
+    margin-top: 70px;
+    box-sizing: border-box;
+}
+
+div#row-login {
+    width: 100%;
+    padding-top: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#bloco-login {
+    width: 400px;
+    height: 330px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* formulário de login */
+form {
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+form label {
+    font-size: 12px;
+    width: 50%;
+    text-align: left;
+    color: rgb(90, 91, 90);
+}
+
+form select {
+    width: 50%;
+}
+
+form input {
+    width: 50%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(197, 217, 252);
+    border-radius: 4px;
+
+}
+
+form, p#form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button[type=submit] {
+    width: 50%;
+    background-color: rgb(106,215,97);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button[type=submit]:hover {
+    background-color: rgb(76, 179, 66);
+}
+
+/* DASHBOARD.PHP */
+/* Estilos da página inicial (dashboard) */
+
+div#menu-cadastro {
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+div#bloco-cadastro {
+    width: 90%;
+    box-sizing: border-box;
+    justify-content: center;
+}
