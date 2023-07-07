@@ -149,7 +149,7 @@ div#row-menu-cadastro {
 }
 
 div#bloco-menu-cadastro {
-    width: 70%;
+    width: 500px;
     height: 150px;
     justify-content: center;
     border-radius: 10px;
@@ -177,6 +177,51 @@ a.a-menu:hover {
 i {
     font-size: 32px;
     color: rgb(49, 106, 190);
+}
+
+/* Configurações para dispositivos móveis - SGP: Menu Cadastro */
+@media screen and (min-width: 480px) and (max-width: 859px) {
+    div#menu-cadastro {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    div#bloco-menu-cadastro {
+        flex-direction: column;
+        margin-top: 30px;
+        height: 350px;
+        width: 240px;
+    }
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        padding-top: 0px;
+    }
+
+    div#conteudo-footer, p#footer {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (min-width: 860px), (max-width: 1280px) and (orientation: landscape) {
+    div#menu-cadastro {
+        width: auto;
+        height: auto;
+        flex-direction: row;
+    }
+
+    div#bloco-menu-cadastro {
+        flex-direction: row;
+        margin-top: 30px;
+        height: 120px;
+    }
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
 }
 
 
@@ -476,4 +521,6 @@ section#resultado-cadastro-colaborador {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
+
 
