@@ -1,4 +1,4 @@
-<!-- Página principal IMDAZ (login)-->
+<!-- Página principal (login) IMDAZ -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,6 +16,7 @@
 </head>
 <body>
     <?php 
+        // conexão com o banco de dados
         include "conexao.php";
     ?>
     <!-- Área onde fica o Navbar -->
@@ -25,8 +26,6 @@
                 <div class="col-expand-lg col-sm-3" id="left">
                     <h1>Instituto de Menores<br>
                         Dom Antônio Zattera</h1>
-                </div>
-                <div class="col-expand-lg col-sm-3" id="middle">
                     <img id="logo" src="./img/logo_IMDAZ.svg" alt="IMDAZ">
                 </div>
                 <div class="col-expand-lg col-sm-3" id="right">
@@ -44,15 +43,15 @@
                 <h2>Sistema de Gestão de Pessoas</h2>
                 <div class="col-expand-lg col-sm-4" id="bloco-login">
                     <form action="cadastro.php" method="post">
-                        <p id="form">
+                        <p>
                             <label for="email">E-mail:</label><br>
                             <input type="text" id="email" name="email" required>
                         </p>
-                        <p id="form">
+                        <p>
                             <label for="senha">Senha:</label><br>
                             <input type="password" id="senha" name="senha" required>
                         </p>
-                        <p id="form">
+                        <p>
                             <button class="btn btn-success" type="submit">Entrar</button>
                         </p>
                     </form>
