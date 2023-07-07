@@ -1,0 +1,479 @@
+/* Estilos SGP IMDAZ */
+/* Definição de charset */
+@charset "UTF-8";
+/* Importando a fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap');
+
+/* Configurações gerais */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 150px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(230, 134, 78);
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(230, 134, 78);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ESTILOS COMUNS A TODAS AS PÁGINAS */
+/* Header e Navbar */
+header {
+    background-color: rgb(49, 106, 190);
+    height: 80px;
+}
+
+div#nav-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    height: auto;
+}
+
+div.row {
+    width: 100%;
+    padding-top: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#left {
+    width: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+div#right {
+    width: 100px;
+    text-align: end;
+    display: flex;
+    align-items: end;
+    font-size: 13px;
+    margin-right: -20px;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: end;
+}
+
+img#logo {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+
+/* Final da página (Footer) */
+footer {
+    background-color:rgb(49, 106, 190);
+    position: relative;
+    bottom: 0px;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+div#conteudo-footer, p#footer {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+/* INDEX.PHP */
+/* Menu do SGP para cadastro de pessoas */
+
+/* Área para menu - cadastro */
+div#menu-cadastro {
+    display: flex;
+    margin-top: 70px;
+    box-sizing: border-box;
+    width: 60%;
+    /*background-color: rgb(18, 70, 110);*/
+}
+
+div#row-menu-cadastro {
+    width: 100%;
+    padding-top: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#bloco-menu-cadastro {
+    width: 70%;
+    height: 150px;
+    justify-content: center;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(197, 217, 252);
+}
+
+p#menu-cad-1 {
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 20px;
+}
+
+a.a-menu {
+    color: rgb(0, 0, 0);
+}
+
+a.a-menu:hover {
+    color: rgb(230, 134, 78);
+    font-weight: bold;
+}
+
+i {
+    font-size: 32px;
+    color: rgb(49, 106, 190);
+}
+
+
+/* CAD-FUNCIONARIO.PHP */
+/* Área para cadastro de Funcionário */
+div#area-cad-funcionario {
+    display: flex;
+    margin-top: 40px;
+    width: 900px;
+    height: 1400px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+div#row-cad-funcionario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div#bloco-cad-funcionario {
+    width: 900px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Formulário de Cadastro - Funcionário */
+form {
+    width: 500px;
+    height: 600px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-size: 12px;
+    width: 80%;
+    text-align: left;
+    color: rgb(90, 91, 90);
+}
+
+form select {
+    width: 80%;
+}
+
+form input {
+    width: 80%;
+    height: 32px;
+    margin-bottom: 10px;
+    background-color: rgb(197, 217, 252);
+    border-radius: 4px;
+    font-size: 13px;
+    padding-left: 5px;
+
+}
+
+form, p#form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button[type=submit] {
+    width: 50%;
+    background-color: rgb(106,215,97);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button[type=submit]:hover {
+    background-color: rgb(76, 179, 66);
+}
+
+/* Resultado do cadastro */
+div#resultado-cad {
+    background-color: rgb(197, 217, 252);
+    width: 380px;
+    height: 450px; 
+    margin-top: 20px;
+    border-radius: 10px;
+    display: block;
+}
+
+section#resultado-cadastro {
+    text-align: start;
+    width: 320px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/* CAD-ALUNO.PHP */
+/* Área para cadastro de Aluno */
+div#area-cad-aluno {
+    display: flex;
+    margin-top: 40px;
+    width: 900px;
+    height: 1400px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+div#row-cad-aluno {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div#bloco-cad-aluno {
+    width: 900px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Formulário de Cadastro - Aluno */
+form {
+    width: 500px;
+    height: 600px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-size: 12px;
+    width: 80%;
+    text-align: left;
+    color: rgb(90, 91, 90);
+}
+
+form select {
+    width: 80%;
+}
+
+form input {
+    width: 80%;
+    height: 32px;
+    margin-bottom: 10px;
+    background-color: rgb(197, 217, 252);
+    border-radius: 4px;
+    font-size: 13px;
+    padding-left: 5px;
+
+}
+
+form, p#form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button[type=submit] {
+    width: 50%;
+    background-color: rgb(106,215,97);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button[type=submit]:hover {
+    background-color: rgb(76, 179, 66);
+}
+
+/* Resultado do cadastro */
+div#resultado-cad-aluno {
+    background-color: rgb(197, 217, 252);
+    width: 380px;
+    height: 450px; 
+    margin-top: 150px;
+    border-radius: 10px;
+    display: block;
+}
+
+section#resultado-cadastro-aluno {
+    text-align: start;
+    width: 320px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/* CAD-COLABORADOR.PHP */
+/* Área para cadastro de Colaborador */
+div#area-cad-colaborador {
+    display: flex;
+    margin-top: 40px;
+    width: 900px;
+    height: 1400px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+div#row-cad-colaborador {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div#bloco-cad-colaborador {
+    width: 900px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Formulário de Cadastro - Colaborador */
+form {
+    width: 500px;
+    height: 600px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-size: 12px;
+    width: 80%;
+    text-align: left;
+    color: rgb(90, 91, 90);
+}
+
+form select {
+    width: 80%;
+}
+
+form input {
+    width: 80%;
+    height: 32px;
+    margin-bottom: 10px;
+    background-color: rgb(197, 217, 252);
+    border-radius: 4px;
+    font-size: 13px;
+    padding-left: 5px;
+
+}
+
+form, p#form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button[type=submit] {
+    width: 50%;
+    background-color: rgb(106,215,97);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button[type=submit]:hover {
+    background-color: rgb(76, 179, 66);
+}
+
+/* Resultado do cadastro */
+div#resultado-cad-colaborador {
+    background-color: rgb(197, 217, 252);
+    width: 380px;
+    height: 450px; 
+    margin-top: 100px;
+    border-radius: 10px;
+    display: block;
+}
+
+section#resultado-cadastro-colaborador {
+    text-align: start;
+    width: 320px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
