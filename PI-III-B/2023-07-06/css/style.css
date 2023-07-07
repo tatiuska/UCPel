@@ -206,20 +206,49 @@ button[type=submit]:hover {
 
 /* DASHBOARD.PHP */
 /* Estilos da página inicial/menu de cadastro (dashboard) */
+/* Estilos do Navbar com mais links à direita */
+/*
 div#right-in {
-    width: 300px;
-    text-align: right;
+    width: 150px;
+    text-align: center;
     display: flex;
-    align-items: end;
+    flex-direction: row;
+    align-items: center;
     font-size: 13px;
-    margin-right: -20px;
+    justify-content: center;
 }
 
+nav.nav-menu {
+    background-color: rgb(49, 106, 190);
+    width: auto;
+}
+
+ul.menu {
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+ul.menu li {
+    padding: 6px 5px;
+    margin-left: 9px;
+    margin-right: 9px;
+    align-self: center;
+}
+
+ui.menu li a {
+    display: block;
+}*/
+
+/* Área para menu - cadastro */
 div#menu-cadastro {
     display: flex;
     margin-top: 70px;
     box-sizing: border-box;
-    /* background-color: rgb(18, 70, 110); */
+    width: 60%;
+    /*background-color: rgb(18, 70, 110);*/
 }
 
 div#row-menu-cadastro {
@@ -233,31 +262,26 @@ div#row-menu-cadastro {
 
 div#bloco-menu-cadastro {
     width: 70%;
-    height: 200px;
+    height: 150px;
     justify-content: center;
     border-radius: 10px;
     display: inline-flex;
     align-items: center;
     text-align: center;
     background-color: rgb(197, 217, 252);
-    /* background-color: rgb(110, 18, 98); */
 }
 
 p#menu-cad-1 {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
     font-size: 20px;
 }
 
-p#menu-cad-1, a.a-menu {
+a.a-menu {
     color: rgb(0, 0, 0);
 }
 
-a.nav-link {
-    color: rgb(255, 255, 255);
-}
-
-a.nav-link:hover {
+a.a-menu:hover {
     color: rgb(230, 134, 78);
     font-weight: bold;
 }
@@ -265,4 +289,42 @@ a.nav-link:hover {
 i {
     font-size: 32px;
     color: rgb(49, 106, 190);
+}
+
+/* Contador de Cadastros já realizados no sistema */
+div#bloco-contador-cadastros {
+    width: 70%;
+    height: 150px;
+    justify-content: center;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(197, 217, 252);
+}
+
+div#cadastrados {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+p#cont-1 {
+    font-size: 36px;
+    color: rgb(49, 106, 190);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+p#cont-2 {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }

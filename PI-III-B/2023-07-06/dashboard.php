@@ -28,14 +28,9 @@
                         Dom Antônio Zattera</h1>
                     <img id="logo" src="./img/logo_IMDAZ.svg" alt="IMDAZ">
                 </div>
-                <div class="col-expand-lg col-sm-3" id="right-in">
-                    <nav class="navbar navbar-expand-lg nav-menu">
-                        <ul>
-                            <li class="item"><a class="nav-item nav-link" href="pesquisar.php" id="pesquisar">Pesquisar</a></li>
-                            <li class="item"><a class="nav-item nav-link" href="edit-cadastro.php" id="edit-cadastro">Editar Cadastro</a></li>
-                            <li class="item"><a class="nav-item nav-link" href="index.php" id="sair">Sair</a></li>
-                            <li class="toggle"><a><span class="bars"></span></a></li>
-                        </ul>
+                <div class="col-expand-lg col-sm-3" id="right">
+                    <nav class="navbar">
+                        <a href="#">Entrar</a>
                     </nav>
                 </div>
             </div>
@@ -48,19 +43,39 @@
                 <h2>Cadastrar Pessoa</h2>
                 <div class="col-expand-lg col-sm-4" id="bloco-menu-cadastro">    
                     <p id="menu-cad-1">
-                        <i class="bi bi-person-plus"></i><br>
-                        <a class="a-menu" href="cad-funcionario.php">Funcionário</a>
+                        <a class="a-menu" href="cad-funcionario.php">
+                            <i class="bi bi-person-plus"></i><br>
+                            Funcionário
+                        </a>
                     </p>
                     <p id="menu-cad-1">
-                        <i class="bi bi-person-plus"></i><br>
-                        <a class="a-menu" href="cad-aluno.php">Aluno</a>
+                        <a class="a-menu" href="cad-aluno.php">
+                            <i class="bi bi-person-plus"></i><br>
+                            Aluno
+                        </a>
                     </p>
                     <p id="menu-cad-1">
-                        <i class="bi bi-person-plus"></i><br>
-                        <a class="a-menu" href="cad-colaborador.php">Colaborador</a>
+                        <a class="a-menu" href="cad-colaborador.php">
+                            <i class="bi bi-person-plus"></i><br>
+                            Colaborador
+                        </a>
                     </p>
                 </div>
-                <!-- Adicionar segunda div com estatísticas -->
+                <!-- Contagens de pessoas já cadastradas no sistema -->
+                <div class="col-expand-lg col-sm-4" id="bloco-contador-cadastros">
+                    <div id="cadastrados">
+                        <p id="cont-1">08</p>
+                        <p id="cont-2">Funcionários</p>
+                    </div>
+                    <div id="cadastrados">
+                        <p id="cont-1">05</p>
+                        <p id="cont-2">Alunos</p>
+                    </div>
+                    <div id="cadastrados">
+                        <p id="cont-1">02</p>
+                        <p id="cont-2">Colaboradores</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
