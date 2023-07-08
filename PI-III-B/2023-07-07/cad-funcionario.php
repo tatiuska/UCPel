@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS do Projeto -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/funcionario.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- JS Bootstrap -->
@@ -17,8 +18,8 @@
 <body>
     <?php
         // Inserir códigos da classe Pessoa e da Classe Funcionário
-        //include "pessoa.php";
-        //include "funcionario.php";
+        include ("Pessoa.php");
+        include ("Funcionario.php");
 
         // Capturando os dados do formulário retroalimentado pelo método POST
         $nome = $_POST['nome'] ?? "Não informado"; // Uso do operador de coalescência nula caso o usuário não preencha nada
@@ -28,6 +29,7 @@
         $telefone = $_POST['telefone'] ?? "Não informado";
         $cargo = $_POST['cargo'] ?? "Não informado";
         $salario = $_POST['salario'] ?? "Não informado";
+        $dataIngresso = $_POST['dataIngresso'] ?? "Não informado";
     ?>
     <!-- Área onde fica o Navbar -->
     <header>
@@ -50,7 +52,7 @@
         <!-- Área do fomrulário de cadastro para funcionário -->
         <div class="container-fluid" id="area-cad-funcionario">
             <div class="row col-12" id="row-cad-funcionario">
-                <h2>Cadastro: Funcionário</h2>
+                <h2 id="main">Cadastro: Funcionário</h2>
                 <div class="col-expand-lg col-sm-4" id="bloco-cad-funcionario">    
                     <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
                         <p id="form">
@@ -82,6 +84,10 @@
                             <input type="text" id="salario" name="salario" value="<?=$salario?>" required>
                         </p>
                         <p id="form">
+                            <label for="dataIngresso">Data de Ingresso:</label><br>
+                            <input type="date" id="dataIngresso" name="dataIngresso" value="<?=$dataIngresso?>" required>
+                        </p>
+                        <p id="form">
                             <button class="btn btn-success" type="submit">Enviar</button>
                         </p>
                     </form>
@@ -98,7 +104,8 @@
                             <b>Endereço:</b> $endereco<br>
                             <b>Telefone:</b> $telefone<br>
                             <b>Cargo:</b> $cargo<br>
-                            <b>Salário:</b> $salario</p>";
+                            <b>Salário:</b> $salario<br>
+                            <b>Data de Ingresso:</b> $dataIngresso</p>";
                         ?>
                     </section>
                 </div>
@@ -106,7 +113,7 @@
         </div>
     </main>
     <!-- Seção final da página -->
-    <footer>
+    <footer id="cad-f">
         <div class="container-fluid">
             <div class="row" id="footer-row">
                 <div class="col-12" id="conteudo-footer">

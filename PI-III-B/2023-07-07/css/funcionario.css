@@ -1,0 +1,109 @@
+/* Configurações para dispositivos móveis - Cadastro Funcionário */
+@media screen and (min-width: 480px) and (max-width: 859px) {
+    h2 {
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    div#area-cad-funcionario {
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    div#bloco-cad-funcionario {
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left:26px;
+        height: 600px;
+        width: 400px;
+    }
+
+    /* Resultado do cadastro */
+    div#resultado-cad {
+        width: 380px;
+        height: 280px; 
+        margin-top: 5px;
+        margin-left: 30px;
+        border-radius: 10px;
+        display: block;
+    }
+
+    section#resultado-cadastro {
+        text-align: start;
+        width: 330px;
+        height: 280px;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    
+    footer {
+        position: relative;
+        bottom: 0;
+        padding-top: 0px;
+    }
+
+    div#conteudo-footer, p#footer {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (min-width: 860px) and (max-width: 1280px) and (orientation: landscape) {
+    h2#main {
+        margin-bottom: 70px;
+    }
+    div#area-cad-funcionario {
+        width: 750px;
+        height: 900;
+        margin-top: 50px;
+        align-items:center;
+        flex-direction: column;
+    }
+    
+    div#row-cad-funcionario {
+        margin-top: 0px;
+        width: 800px;
+        height: 900px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    div#bloco-cad-funcionario {
+        flex-direction: column;
+        margin-top: 10px;
+        height: 420px;
+    }
+    
+        /* Resultado do cadastro */
+    div#resultado-cad {
+        width: 380px;
+        height: 280px; 
+        margin-top: 160px;
+        margin-left: 210px;
+        border-radius: 10px;
+        display: block;
+    }
+
+    section#resultado-cadastro {
+        text-align: start;
+        width: 330px;
+        height: 280px;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    div#conteudo-footer, p#footer {
+        padding-top: 9px;
+    }
+    
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+}
