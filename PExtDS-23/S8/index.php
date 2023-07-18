@@ -9,10 +9,13 @@
     <!-- Link para carregamento do style.css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Link para o script.js -->
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/script.js" defer></script>
 </head>
 <body>
-    <?php 
+    <?php
+        // Incluindo o script para cadastro com o Banco de dados 
+        include "./php/conexao.php";
+
         // Capturando os dados do formulário retroalimentado
         $nome = $_POST['nome'] ?? "Não informado"; // Uso do operador de coalescência nula caso o usuário não preencha nada
         $cpf = $_POST['cpf'] ?? "Não informado";
