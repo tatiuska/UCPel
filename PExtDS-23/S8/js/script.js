@@ -1,8 +1,8 @@
 // Função para Validação de CPF
 function ValidaCPF(){
-    var RegraValida = document.getElementById("RegraValida").value;
+    var RegraCPF = document.getElementById("RegraCPF").value;
     var cpfValido = /^(([0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2})|([0-9]{11}))$/;
-    if (cpfValido.test(RegraValida) == true){
+    if (cpfValido.test(RegraCPF) == true){
         console.log("CPF Válido");
     } else {
         console.log("CPF inválido");

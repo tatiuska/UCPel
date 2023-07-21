@@ -9,12 +9,12 @@
     <!-- Link para carregamento do style.css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Link para o script.js -->
-    <script type="text/javascript" src="./js/script.js" defer></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
     <?php
         // Incluindo o script para cadastro com o Banco de dados 
-        //include "./php/conexao.php";
+        include "./php/conexao.php";
 
         // Capturando os dados do formulário retroalimentado
         $nome = $_POST['nome'] ?? "Não informado"; // Uso do operador de coalescência nula caso o usuário não preencha nada
@@ -41,7 +41,7 @@
                 </p>
                 <p>
                     <label for="cpf">CPF: </label>
-                    <input type="text" name="RegraCPF" id="RegraCPF" value="<?=$cpf?>" onkeydown="javascript: fMasc(this, mCPF);">
+                    <input type="text" name="cpf" id="idCpf" value="<?=$cpf?>">
                 </p>
                 <p>
                     <label for="d_nasc">Data de Nascimento: </label>
@@ -73,7 +73,7 @@
                 </p>
                 <p>
                     <!-- Botão para enviar as informações -->
-                    <input type="submit" value="Enviar" onclick="ValidaCPF();">
+                    <input type="submit" value="Enviar">
                 </p>
             </form>
             <!-- Fim do Formulário -->
