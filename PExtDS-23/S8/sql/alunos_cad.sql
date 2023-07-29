@@ -39,5 +39,27 @@ INSERT INTO `alunos` VALUES
 ('15', 'Pablo Farias da Costa', '22639506056', '1990-07-23', '(88) 3145-8910', '2022096745', '02/2020', 'Análise e Desenvolvimento de Sistemas', TRUE);
 
 -- Alterando a estrutura da tabela para alterar o nome de uma das colunas.
+-- criando tabela Endereços para posteriormente utlizar o comando truncate.
+CREATE TABLE `enderecos` (
+	`id` int NOT NULL AUTO_INCREMENT,
+	`rua` varchar(50) NOT NULL,
+    `numero` bigint,
+    `complemento` date,
+    `bairro` char(15),
+    `cep` int,
+    `cidade` varchar(10),
+    `pais` varchar(50),
+    PRIMARY KEY(`id`)
+) DEFAULT CHARSET = utf8mb4; -- Especificação de caracteres para a tabela enderecos.
+
+ALTER TABLE `enderecos` ADD COLUMN `pais` varchar(10); -- Adicionando coluna país para a tabela endereços.
 
 -- Escolhendo e manupulando tuplas.
+UPDATE `alunos` SET nome = 'Paula de Amorim Dias', telefone = '(51) 98702-0022', curso = 'Análise e Desenvolvimento de Sistemas' WHERE id = '11' LIMIT 1; -- atualizando dados de aluna.
+
+DELETE FROM `alunos` WHERE id = 3; -- deletando uma linha da tabela alunos.
+
+TRUNCATE `enderecos`; -- Usando o comando truncate para deletar todas as linhas da tabela enderecos.
+
+DROP TABLE `enderecos`; -- Deletando a tabela enderecos.
+
