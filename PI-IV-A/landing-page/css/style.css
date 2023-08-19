@@ -1,11 +1,38 @@
 /* Estilos para a landing page do Instituto de Menores (IMDAZ) */
+
+/* Definição de charset */
+@charset "UTF-8";
+
+/* Importando a fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap');
+
+/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Estilos Header e Navbar */
 header {
     width: auto;
     height: 110px;
     background-color: #316ABE;
+}
+
+div#left {
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 180px;
+}
+
+div#right {
+    margin-left: -20px;
+    margin-top: 25px;
+
+}
+
+h1 {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
 }
