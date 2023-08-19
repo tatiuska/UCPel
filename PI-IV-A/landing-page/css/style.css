@@ -19,20 +19,36 @@ header {
     background-color: #316ABE;
 }
 
+/* Div onde fica o nome da instituição */
 div#left {
     margin-left: 30px;
     margin-top: 40px;
     width: 180px;
 }
 
-div#right {
-    margin-left: -20px;
-    margin-top: 25px;
-
-}
-
+/* H1 com o nome da instituição */
 h1 {
     font-size: 12px;
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
+}
+
+/* Div onde fica o logo da instituição  */
+div#center {
+    margin-left: -20px;
+    margin-top: 25px;
+}
+
+/* Mobile - Header e Navbar */
+@media(max-width: 480px) {
+    
+    div#left {
+        margin-left: 20px;
+    }
+
+    div#center {
+        width: 150px;
+        margin-left: -10px;
+    }
+    
 }
