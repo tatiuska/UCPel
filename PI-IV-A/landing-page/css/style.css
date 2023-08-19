@@ -1,0 +1,11 @@
+/* Estilos para a landing page do Instituto de Menores (IMDAZ) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: auto;
+    height: 110px;
+    background-color: #316ABE;
+}
