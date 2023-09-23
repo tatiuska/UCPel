@@ -1,4 +1,4 @@
-/* Estilos para o site do Instituto de Menores (IMDAZ) */
+/* Estilos gerais para o site do Instituto de Menores (IMDAZ) */
 
 /* Definição de charset */
 @charset "UTF-8";
@@ -125,6 +125,6 @@ footer p {
 @media(min-width: 481px) and (max-width: 1200px) {
 
     div#center {
-        margin-left: -70px;
+        padding-left: -70px;
     }
 }
