@@ -109,22 +109,50 @@ footer p {
 }
 
 /* Mobile - Header e Navbar */
-@media(max-width: 480px) {
+@media(max-width: 560px) {
     
+    div.row {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     div#left {
-        margin-left: 20px;
+        width:32%;
+        margin-left: 10px;
     }
 
     div#center {
-        width: 150px;
-        margin-left: -80px;
+        width: 30%;
+        margin-left: 5px;
+    }
+
+    div#right {
+        width: 32%;
+        padding-right: 10px;
+    }
+
+    nav {
+        background-color: #316ABE;
+        align-content: end;
+    }
+
+    button {
+        align-self: inherit;
+    }
+
+    ul li {
+        padding-right: 20px;
     }
     
 }
 
-@media(min-width: 481px) and (max-width: 1200px) {
+@media(min-width: 561px) and (max-width: 1200px) {
 
     div#center {
         padding-left: -70px;
+    }
+
+    nav {
+        background-color: #316ABE;
     }
 }
