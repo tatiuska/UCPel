@@ -85,6 +85,7 @@ ul li {
 span.bi-list {
     color: #FFFFFF;
     font-size: 25px;
+    display: none;
 }
 
 span.bi-list:hover {
@@ -134,6 +135,10 @@ footer p {
     nav {
         background-color: #316ABE;
         align-content: end;
+    }
+
+    span.bi.bi-list {
+        display: block;
     }
 
     button {

@@ -1,0 +1,18 @@
+/* Estilos gerais para o site do Instituto de Menores (IMDAZ) - projetos.html */
+
+/* Definição de charset */
+@charset "UTF-8";
+
+/* Importando a fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap');
+
+/* Estilos Projetos.html */
+div.card {
+    float: inline-start;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+main img {
+    width: 30%;
+    height: 30%;
+}
