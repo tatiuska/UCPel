@@ -1,0 +1,42 @@
+/* Estilos para a main da página inicial */
+/* usando z-index para deixar a div banner-principal ser sobreposta pela div texto-h2 */
+div#banner-principal {
+    z-index: -1;
+}
+
+/* Estilos div texto-h2 */
+div#texto-h2 {
+    margin-top: -200px;
+    background-color: #316ABE;
+    color: #FFFFFF;
+    height: 40px;
+    text-align: end;
+    border-radius: 10px;
+    padding-top: 5px;
+    z-index: 100;
+}
+
+/* Estilo h2 */
+h2 {
+    font-size: 20px;
+}
+
+/* Div com texto página inicial */
+div#texto-principal {
+    width: 400px;
+    height: 350px;
+    margin-right: 120px;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #316ABE;
+}
+
+p {
+    font-size: 12px;
+    color: #000000;
+}
+
