@@ -7,12 +7,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap');
 
 /* Estilos Projetos.html */
+main#projetos {
+    height: 100%;
+}
+
+/* Estilos das divs para organização dos projetos */
+div.row-1 {
+    width: 400px;
+    height: 900px;
+}
+
+div.row-2 {
+    width: 400px;
+    height: 900px;
+}
+
+div.row-3 {
+    width: 400px;
+    height: 900px;
+}
+
+div.row-4 {
+    width: 400px;
+    height: 900px;
+}
+
+/* Estilos para os cards dos projetos */
 div.card {
-    float: inline-start;
+    display: flex;
+    align-content: space-around;
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 0px;
 }
+
+/* Definição de tamanho da imagem dentro dos cards */
 main img {
-    width: 30%;
-    height: 30%;
+    height: 50%;
 }
