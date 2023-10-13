@@ -1,6 +1,7 @@
 <h1>UCPel</h1>
 <b>ED:</b> Exercícios de C da disciplina Estrutura de Dados (fevereiro-abril/23).</br>
 <b>FDW:</b> Exercícios da disciplina Fundamentos de Desenvolvimento Web (agosto-outubro/23).</br>
+<b>IA:</b> Exercícios da disciplina Integração de Aplicações (outubro-dezembro/23)</br>
 <b>IA-ML:</b> Exercícios de Python para Machine Learning (março-julho/23).</br>
 <b>IAM:</b> Práticas da disciplina Introdução ao Aprendizado de Máquina [ouvinte] (maio-julho/23).</br>
 <b>Java:</b> Exercícios de Java das disciplinas de Arquitetura e Organização de Computadores e Projeto Integrador I-A (fevereiro-abril/22).</br>
