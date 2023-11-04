@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<?xml-stylesheet type="text/xsl" href="boletim.xsl"?>
+<boletim>
+    <aluno>
+        <nome>Thiago Rodrigues</nome>
+        <portugues>7</portugues>
+        <matematica>9</matematica>
+        <ciencias>6</ciencias>
+    </aluno>
+    <aluno>
+        <nome>Taylanne Nascimento</nome>
+        <portugues>6</portugues>
+        <matematica>8</matematica>
+        <ciencias>7</ciencias>
+    </aluno>
+</boletim>
