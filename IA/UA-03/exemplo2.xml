@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE endereco [
+    <!ELEMENT endereco (nome, empresa, telefone)>
+    <!ELEMENT nome (#PCDATA)> <!-- essa parte do código foi modificada para corrigir problema detectado pela IDE -->
+    <!-- <!ELEMENT nome CDATA #REQUIRED> -->
+    <!ELEMENT empresa (#PCDATA)>
+    <!ELEMENT telefone (#PCDATA)>
+]>
+
+<endereco>
+    <nome>Thiago Nascimento</nome>
+    <empresa>Sagah Soluções Educacionais</empresa>
+    <telefone>(041) 1234-5678</telefone>
+</endereco>
