@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nesse exemplo não havia linha para o xml e para o schema, e TipoEndereco não funciona nos elementos seguintes -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="TipoEndereco">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nome" type="xs:string" />
+                <xs:element name="empresa" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="EnderecoPessoaFisica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="endereco" type="TipoEndereco" />
+                <xs:element name="telefone1" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="EnderecoPessoaJuridica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="endereco" type="TipoEndereco" />
+                <xs:element name="telefone2" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
