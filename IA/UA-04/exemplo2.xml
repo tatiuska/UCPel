@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!-- Padrão de interação publish-subscribe -->
+<env:Envelope xmlns:env="http://www.w3.org/2001/09/soap-envelope">
+    <env:Body>
+        <s:InscricaoNotificacaoAcao xmlns:s="http://example.org/2001/06/subscribe">
+            <s:Notificacao>PREÇO</s:Notificacao>
+            <s:Notificacao>VOLUME</s:Notificacao>
+            <s:Notificacao>HORÁRIO</s:Notificacao>
+            <s:Quando>
+                <s:Empresa>Sagah</s:Empresa>
+                <s:Preco variacao="MaiorQue">100</s:Preco>
+            </s:Quando>
+        </s:InscricaoNotificacaoAcao>
+    </env:Body>
+</env:Envelope>
