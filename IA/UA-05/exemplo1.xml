@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2001/12/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <SOAP-ENV:Body>
+        <ns1:obterPreco xmlns:ns1="urn:exemplos?servicoDePrecos" SOAP-ENV:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
+            <return xsi:type="xsd:double">54.99</return>
+        </ns1:obterPreco>
+    </SOAP-ENV:Body>
+
+</SOAP-ENV:Envelope>
