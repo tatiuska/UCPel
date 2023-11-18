@@ -13,4 +13,5 @@
 <b>PI-II-A:</b> Exercícios de C da disciplina Projeto Integrador II-A (julho-setembro/22).</br>
 <b>PI-III-B:</b> Código da entrega final (maio-julho/23).</br>
 <b>PI-IV-A:</b> Parte da entrega final (agosto-outubro/23).</br>
+<b>PI-IV-B:</b> Exercícios dos encontros presenciais e código desenvolvido para as entregas parcial e final (outubro-dezembro/23).</br>
 <b>POO:</b> Exercícios de Java da disciplina Programação Orientada a Objetos (maio-julho/23).</br>
