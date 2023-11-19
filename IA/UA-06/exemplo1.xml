@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Estrutura básica de uma mensagem SOAP -->
+<SOAP-ENV:envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- O elemento SOAP-ENV:envelope foi complementado para encerrar erro detectado pela IDE -->
+    <!-- Elemento-raiz do SOAP. Define que essa é uma mensagem SOAP -->
+    <SOAP-ENV:header>
+        <!-- Especifica informações como autênticação (opcional) -->
+    </SOAP-ENV:header>
+    <SOAP-ENV:body>
+        <!-- Elemento que contém o conteúdo da mensagem -->
+        <SOAP-ENV:fault>
+            <!-- Elemento que contém os erros que podem ocorrer -->
+        </SOAP-ENV:fault>
+    </SOAP-ENV:body>
+</SOAP-ENV:envelope>
