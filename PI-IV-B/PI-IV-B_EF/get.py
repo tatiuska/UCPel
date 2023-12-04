@@ -1,25 +1,36 @@
-import requests
+from flask import Flask, jsonfy
+import json
 
-# URL da rota GET para obter todos os clientes
-url_get_all = 'http://127.0.0.1:5000/api/clientes'
+app = Flask(__name__)
 
-# URL da rota GET para obter um cliente específico (substitua <id> pelo ID desejado)
-url_get_one = 'http://127.0.0.1:5000/app/clientes/3'
+# Função para carregar os clientes do arquivo JSON
+def carregar_clientes():
+    try:
+        with open('clientes.json', 'r') as arquivo:
+            return json.load(arquivo)
+    except FileNotFoundError:
+        # Se o arquivo não existir, inicizliza uma lista vazia
+        return []
 
-# Fazer uma requisição GET para a URL e obter todos os clientes
-response_all = requests.get(url_get_all)
+# Rota para obter todos os clientes
+@app.route('/api/clientes', methods=['GET'])
+def obter_clientes():
+    # Carrega os clientes existentes
+    clientes = carregar_clientes()
+    return jsonify({'clientes': clientes})
 
-# Exibe o código de status da resposta para obter todos os clientes
-print(response_all.status_code)
+# Rota para obter um cliente por ID
+@app.route('/api/clientes/<int:usuario_id>', methods=['GET'])
+def obter_cliente(cliente_id):
+    # Carrega os clientes existentes
+    clientes = carregar_clientes()
 
-# Exibe a resposta JSON retornada pelo servidor para obter todos os clientes
-print(response_all.json())
+    # Procura o cliente com o ID especificado
+    cliente = next((client for client in clientes if client["id"] == cliente_id), None)
+    if cliente:
+        return jsonify({"cliente": cliente})
+    else:
+        return jsonify({"mensagem": "Cliente não encontrado"}), 404
 
-# Faz uma requisição GET para a URL para obter um cliente específico (substitua <id> pelo ID desejado - linha 7)
-response_one = requests.get(url_get_one)
-
-# Exibe o código de status da resposta para obter um usuário específico
-print(response_one.status_code)
-
-# Exibe a resposta JSON retornada pelo servidor para obter um cliente específico
-print(response_one.json())
+if __name__ == '__main__':
+    app.run(debug=True)
