@@ -5,9 +5,12 @@
 
     echo "Nome completo: " . $nome . ". </br>";
 
-    if($idade < 18)
+    if($idade < 18) {
         echo "Idade: " . $idade . " anos (menor de idade)." . "</br>";
-    else
+    }
+        
+    else {
         echo "Idade: " . $idade . " anos (maior de idade)." . "</br>";
+    }
 
 ?>
