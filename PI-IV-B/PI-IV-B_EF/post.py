@@ -25,7 +25,7 @@ def obter_clientes():
     return jsonify({"clientes": clientes})
 
 # Rota para adicionar um novo cliente (método POST)
-@app.route('/api/usuarios', methods=['POST'])
+@app.route('/api/clientes', methods=['POST'])
 def adicionar_cliente():
     # Obtém os dados do novo cliente a partir do corpo da requisição JSON
     novo_cliente = request.get_json()
