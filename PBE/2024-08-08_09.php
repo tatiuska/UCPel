@@ -22,8 +22,12 @@
         <input type="submit" value="Enviar">
     </form>
     <?php 
-        // testando a variável de sessão
-        echo "Seja bem-vindo, " . $_SESSION["username"] . "!";
+        // mensagem de boas-vindas personalizada
+        echo "Seja bem-vindo, " . $_SESSION["username"] . "!" . " <input type='submit' value='Sair' method='post' name='logout'>";
+
+        // if($_POST["logout"]) {
+        //     session_destroy();
+        // }
     ?>
 </body>
 </html>
