@@ -13,21 +13,18 @@
 
         // variável de sessão
         $_SESSION["username"] = $_POST["username"];
+
     ?>
     <!-- formulário para receber nome de usuário e senha -->
     <form name="form" method="post">
         <p>Digite seu nome de usuário e senha:</p>
-        <input type="text" value="" placeholder="Nome de usuário" name="username"></br>
-        <input type="text" value="" placeholder="Senha" name="password"></br>
+        <input type="text" placeholder="Nome de usuário" name="username"></br>
+        <input type="text" placeholder="Senha" name="password"></br>
         <input type="submit" value="Enviar">
     </form>
     <?php 
         // mensagem de boas-vindas personalizada
-        echo "Seja bem-vindo, " . $_SESSION["username"] . "!" . " <input type='submit' value='Sair' method='post' name='logout'>";
-
-        // if($_POST["logout"]) {
-        //     session_destroy();
-        // }
+        echo "Seja bem-vindo, " . $_SESSION["username"] . "!" . " <a href='2024-08-09_01.php'>Sair</a>";
     ?>
 </body>
 </html>
