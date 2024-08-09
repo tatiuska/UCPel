@@ -32,6 +32,10 @@ a.out
 .~
 thumbs.db
 
+# Arquivos de PI's específicos #
+/PI-IV-B/PI-IV-B_EF/pi-ivb - Copia/
+/PI-IV-B/PI-IV-B_EF/pi-ivb/
+
 # Database Files #
 .databases/
 *.mwb
