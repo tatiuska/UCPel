@@ -10,5 +10,17 @@
     "nome": "Bob",
     "idade": 30,
     "cpf": "234.567.890-12"
+  },
+  {
+    "id": 3,
+    "nome": "Julia",
+    "idade": 22,
+    "cpf": null
+  },
+  {
+    "nome": "NovoUsuario",
+    "idade": 25,
+    "cpf": "123.456.789-00",
+    "id": 4
   }
 ]

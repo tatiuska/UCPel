@@ -6,6 +6,7 @@ import json
 # Cria uma instância do aplicativo Flask
 app = Flask(__name__)
 
+
 # Função para carregar os usuários do arquivo JSON
 def carregar_usuarios():
     try:
@@ -15,12 +16,14 @@ def carregar_usuarios():
         # Se o arquivo não existir, inicializa com uma lista vazia
         return []
 
+
 # Rota para obter todos os usuários
 @app.route('/api/usuarios', methods=['GET'])
 def obter_usuarios():
     # Carrega os usuários existentes
     usuarios = carregar_usuarios()
     return jsonify({"usuarios": usuarios})
+
 
 # Rota para obter um usuário por ID
 @app.route('/api/usuarios/<int:usuario_id>', methods=['GET'])
@@ -34,6 +37,7 @@ def obter_usuario(usuario_id):
         return jsonify({"usuario": usuario})
     else:
         return jsonify({"mensagem": "Usuário não encontrado"}), 404
+
 
 # Inicia o aplicativo Flask se este arquivo for executado diretamente
 if __name__ == '__main__':
