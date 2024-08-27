@@ -7,10 +7,26 @@
 </head>
 <body>
     <?php 
-        // Script para pegar as informações do formulário via Get
-        foreach($_GET as $key => $value) {
-            echo "$key: $value</br>";
-        }
+        // Criando variáveis individuais para o recebimento dos dados do formulário via get
+        $nome = $_GET['nome'];
+        $dataNascimento = $_GET['dataNascimento'];
+        $endereco = $_GET['endereco'];
+        $estadoCivil = $_GET['estadoCivil'];
+        $sexo = $_GET['sexo'];
+        $locomocao = $_GET['locomocao'];
+        $senha = $_GET['senha'];
+        $confirmaSenha = $_GET['confirmaSenha'];
+
+        // Imprimindo os dados na tela
+        echo "Nome: $nome</br>
+                Data de Nascimento: $dataNascimento</br>
+                Endereço: $endereco</br>
+                Estado Civil: $estadoCivil</br>
+                Sexo: $sexo</br>
+                Meio de Locomoção: $locomocao</br>
+                Senha: $senha</br>
+                Confirmação de Senha: $confirmaSenha</br>";
+
     ?>
     <!-- Formulário de Cadastro - UA 06 -->
     <form name="cadastro" method="get" action="cadastro.php">
