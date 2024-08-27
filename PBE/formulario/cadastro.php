@@ -6,6 +6,12 @@
     <title>Cadastro</title>
 </head>
 <body>
+    <?php 
+        // Script para pegar as informações do formulário via Get
+        foreach($_GET as $key => $value) {
+            echo "$key: $value</br>";
+        }
+    ?>
     <!-- Formulário de Cadastro - UA 06 -->
     <form name="cadastro" method="get" action="cadastro.php">
         <table>
@@ -36,9 +42,9 @@
             <tr>
                 <td><label>Meio de locomoção:</label></td>
                 <td>
-                    <input type="checkbox" name="locomocao[]" value="M"> Moto
-                    <input type="checkbox" name="locomocao[]" value="C"> Coletivo
-                    <input type="checkbox" name="locomocao[]" value="B"> Bicicleta
+                    <input type="checkbox" name="locomocao" value="M"> Moto
+                    <input type="checkbox" name="locomocao" value="C"> Coletivo
+                    <input type="checkbox" name="locomocao" value="B"> Bicicleta
                 </td>
             </tr>
             <tr>
