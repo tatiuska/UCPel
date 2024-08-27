@@ -28,6 +28,11 @@
         if(!is_numeric($_POST['senha'])) {
             echo $_POST['senha'] . " não é numérico.";
         }
+
+        // Validação do campo e-mail
+        if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            echo "Não é um e-mail válido!";
+        }
         
 
     ?>
@@ -65,6 +70,10 @@
                     <input type="checkbox" name="locomocao[]" value="C"> Coletivo
                     <input type="checkbox" name="locomocao[]" value="B"> Bicicleta
                 </td>
+            </tr>
+            <tr>
+                <td><label>E-mail:</label></td>
+                <td><input type="email" name="email"></td>
             </tr>
             <tr>
                 <td><label>Senha:</label></td>
