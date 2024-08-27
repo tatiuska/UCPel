@@ -18,6 +18,16 @@
                 echo "Locomoção: $value<br>";
             }
         }
+
+        // Verificando a submissão do formulário pelo botão enviar
+        if(isset($_POST['enviar']) <> 'Enviar') {
+            echo "Não houve postagem pelo botão enviar do formulário.";
+        }
+
+        // Verificando se o campo senha contém apenas um valor numérico
+        if(!is_numeric($_POST['senha'])) {
+            echo $_POST['senha'] . " não é numérico.";
+        }
         
 
     ?>
