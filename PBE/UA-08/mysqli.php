@@ -13,7 +13,7 @@
         die("Falha na conexão: " . mysqli_connect_error());
     }
 
-    echo "Conexão realizada com sucesso!";
+    echo "Conexão com o banco de dados " . BANCODEDADOS . " realizada com sucesso!";
 
     // fechamento da conexão
     mysqli_close($conexao);
