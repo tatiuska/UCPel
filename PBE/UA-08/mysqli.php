@@ -1,15 +1,12 @@
 <?php 
-    // configurações de conexão com o banco de dados
-    $servidor = "localhost";
-    $usuario = "usuario_do_banco";
-    $senha = "senha_do_banco";
-    $banco = "nome_do_banco";
+    // optei por separar os dados da conexão em outro arquivo
+    require_once "dados_conexao.php";
 
-    // criação da conexão
+    // criação da conexão usando mysqli_connect()
     // $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 
-    // versão orientada a objetos da criação da conexão
-    $conexao = new mysqli($servidor, $usuario, $senha, $banco);
+    // versão orientada a objetos da criação da conexão com mysqli
+    $conexao = new mysqli(SERVIDOR, USUARIO, SENHA, BANCODEDADOS);
 
     // verificando se a conexão foi bem-sucedida
     if(!$conexao) {
