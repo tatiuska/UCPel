@@ -1,5 +1,5 @@
 <?php 
-    // uso do comando select para mostrar registros do banco de dados filmerama em ordem crescente
+    // uso do comando select para mostrar os primeiros registros do banco de dados filmerama
     require_once "dados_conexao.php";
 
     // PDO
