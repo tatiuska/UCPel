@@ -1,0 +1,29 @@
+/* Estilos para o CRUD da UA 09 */
+@charset "UTF-8";
+/* Importação fonte externa do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Estilos das tags principais */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+h2 {
+    font-size: 100;
+    color: darkblue;
+}
+
+form {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 0.9rem;
+    color: dimgray;
+}
