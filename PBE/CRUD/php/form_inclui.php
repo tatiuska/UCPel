@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Livros</title>
     <!-- link para carregamento ds estilos da página -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <h2>Cadastro de Livros - Inclusão</h2>
@@ -25,7 +25,9 @@
         <label for="qtd_paginas">Qtd. Páginas:</label>
         <input type="text" name="qtd_paginas" id="qtd_paginas"><br />
         <br />
-        <input type="submit" value="Incluir">
+        <input type="submit" value="Incluir"><br />
+        <hr>
+        <a href="../index.php"><< Voltar</a>
     </form>
 </body>
 </html>
