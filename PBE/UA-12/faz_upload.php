@@ -7,31 +7,57 @@
 </head>
 <body>
     <?php 
-        // variável que receberá a localização da pasta onde a imagem será salva
-        $upload_dir = 'imagens/';
-        $upload_file = $upload_dir . $_FILES['arquivo']['name'];
-        if(move_uploaded_file($_FILES['arquivo']['tmp_name'], $upload_file)) {
-            echo "Upload efetuado com sucesso!";
-        } else {
-            echo "Ops! Houve uma falha no processo de upload do arquivo!";
-        }
-        echo "<br /><hr>";
+        // verifica se o arquivo existe
+        $arquivo = isset($_FILES['arquivo']) ? $_FILES['arquivo'] : FALSE;
 
-        // usando a superglobal $_FILES para exibir informações do arquivo
+        // variáveis para guardar o conteúdo da superglobal $_FILES
         $nome = $_FILES['arquivo']['name'];
-        echo "Nome original do arquivo: " . $nome . "<br />";
-
         $mime = $_FILES['arquivo']['type'];
-        echo "Tipo MIME do arquivo: " . $mime . "<br />";
-
-        $tamanho = $_FILES['arquivo']['type'];
-        echo "Tamanho do arquivo em bytes: " . $tamanho . "<br />";
-
+        $tamanho = $_FILES['arquivo']['size'];
         $temp = $_FILES['arquivo']['tmp_name'];
-        echo "Nome temporário do arquivo: " . $temp . "<br />";
-
         $erros = $_FILES['arquivo']['error'];
-        echo "Código do erro ocorrido durante o upload arquivo: " . $erros . "<br />";
+
+        // configurando o tamanho máximo de arquivo aceito
+        $max_tamanho = 30000;
+
+        // configurando o tipo MIME aceito
+        $tipo = 'image/png';
+
+        // renomeando nome do arquivo em minúsculas
+        $nome = strtolower($nome);
+
+        // troca espaços por underscore
+        $nome = str_replace(" ", "_", $arquivo['name']);
+
+        // caminho da subpasta para o upload
+        $upload_dir = 'imagens/';
+
+        // guarda o nome do arquivo com seu endereço
+        $upload_file = $upload_dir . $nome;
+
+        // testes de arquivo repetido, tamanho e tipo MIME
+        if(file_exists($upload_file)) {
+            echo "Já existe um arquivo chamado " . $nome . " na pasta " . $upload_dir . ". Tente de novo.<br />";
+            exit;
+        } elseif($tamanho > $max_tamanho) {
+            echo "O arquivo enviado ultrapassa o tamanho máximo de " . $max_tamanho . " bytes. Tente novamente.<br />";
+        } elseif($mime !== $tipo) {
+            echo "O tipo MIME do arquivo enviado não é " . $tipo . ". Tente novamente.<br />";
+        } else {
+            // se o arquivo foi validado, será salvo na pasta imagens
+            if(move_uploaded_file($temp, $upload_file)) {
+                echo "Upload concluído com sucesso!<br />";
+            } else {
+                echo "Erro! Houve uma falha no processo de upload do arquivo! <br />";
+                echo "<hr>";
+                echo "Nome original do arquivo: " . $nome . "<br />";
+                echo "Tipo MIME do arquivo: " . $tipo . "<br />";
+                echo "Tamanho do arquivo em bytes: " . $tamanho . "<br />";
+                echo "Nome temporário do arquivo: " . $temp . "<br />";
+                echo "Código do erro ocorrido durante o upload do arquivo: " . $erros . "<br />";
+                echo "<hr>";
+            }
+        }
     ?>
     <!-- adicionando um botão para voltar à outra página -->
     <input type="button" onclick="location.href='upload.html';" value="Voltar">
