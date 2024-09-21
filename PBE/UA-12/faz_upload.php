@@ -26,6 +26,12 @@
 
         $tamanho = $_FILES['arquivo']['type'];
         echo "Tamanho do arquivo em bytes: " . $tamanho . "<br />";
+
+        $temp = $_FILES['arquivo']['tmp_name'];
+        echo "Nome temporário do arquivo: " . $temp . "<br />";
+
+        $erros = $_FILES['arquivo']['error'];
+        echo "Código do erro ocorrido durante o upload arquivo: " . $erros . "<br />";
     ?>
     <!-- adicionando um botão para voltar à outra página -->
     <input type="button" onclick="location.href='upload.html';" value="Voltar">
