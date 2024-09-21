@@ -3,6 +3,9 @@
 .vscode
 .dist
 
+# Imagens UA-12 (PBE) #
+/PBE/UA-12/imagens/
+
 # NetBeans specific #
 nbproject/private/
 build/
